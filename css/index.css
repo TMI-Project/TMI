@@ -4,6 +4,7 @@
 h1{
     font-size: 34px;
     margin-top: 5px;
+    font-family: font69996;
 }
 a{
     text-decoration: none;
@@ -13,8 +14,9 @@ a{
     font-size: 40px;
     background-color: #e66767;
     display:block; 
-    margin:10%;
-    text-transform:uppercase; 
+    margin:75px 41% 75px 41%;
+    text-transform:uppercase;
+    font-family: Noto Sans; 
 }
 .button:after{
     display: block;
