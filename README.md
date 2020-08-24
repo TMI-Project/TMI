@@ -12,7 +12,7 @@
     각 peed/auth 등의 사이트에 들어가 로그인을 검증 후 각 페이지로 이동한다.
 
 #### Alarm
-![image1](images/alarm.png)
+<img width="77" src=./images/alarm.png>
     캘린더, 피드, 커뮤니티에서 활동을 핢으로써 생기는 각 활동들에 대한 알람을 여기에 표기한다
 
 ### Chatting
