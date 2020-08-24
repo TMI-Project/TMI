@@ -25,14 +25,15 @@
 ## 사용 프로그램
 
 ### 프론트엔드
-
-#### HTML/CSS/JS
+    HTML/CSS/JS
 </br></br>
 
 ### 백엔드
 
-#### 프레임워크 - Node.js
+#### 프레임워크
+    Node.js
 
-#### DBMS - MariaDB
+#### DBMS
+    MariaDB
 
 
