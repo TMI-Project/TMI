@@ -21,20 +21,30 @@
 
 ### Chatting
 <img width="77" src="./images/chatting.png">
+
+```txt
     해당 커뮤니티의 유저들과 대화를 할 수 있는 채팅으로 넘어가는 버튼, 로그인시에만 사용 가능하다.
+```
 
 ### Notice
 <img width="77" src="./images/notice.png">
-    해당 사이트의 공지사항들을 볼 수 있도록 만든 버튼, 로그인시에만 사용이 가능하다.
 
+```txt
+    해당 사이트의 공지사항들을 볼 수 있도록 만든 버튼, 로그인시에만 사용이 가능하다.
+```
 ### Search Box
 <img width="77" src="./images/search.png">
+
+```txt
     왼쪽에서 대회부문, 또는 커뮤니티에 대해서 검색할것인지 검색 전 필터링이 가능하다.
+```
 
 ### 로그인, 회원가입
 <img width="77" src="./images/sign-In.PNG"><img width="77" src="./images/sign-Up.PNG">
-    말 그대로 로그인과 회원가입창으로 넘어가며, 만약 로그인 시 이 두개의 박스는 보이지 않는다.
 
+```txt
+    말 그대로 로그인과 회원가입창으로 넘어가며, 만약 로그인 시 이 두개의 박스는 보이지 않는다.
+```
 
 
 ## 사용 프로그램
