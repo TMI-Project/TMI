@@ -323,3 +323,55 @@ font-size: 30px;
 line-height: 35px;
 text-align: center;
 }
+
+.poster{
+    position: absolute;
+    width: 1338px;
+    height: 431.4px;
+    left: 292px;
+    top: 1470px;
+}
+
+.poster-img1{
+    position: absolute;
+    width: 312px;
+    height: 431.4px;
+    left: 20px;
+    top: 30px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.poster-img2{
+    position: absolute;
+    width: 312px;
+    height: 431.4px;
+    left: 350px;
+    top: 30px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.poster-img3{
+    position: absolute;
+    width: 312px;
+    height: 431.4px;
+    left: 680px;
+    top: 30px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.poster-img4{
+    position: absolute;
+    width: 312px;
+    height: 431.4px;
+    left: 1010px;
+    top: 30px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
