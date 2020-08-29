@@ -1,1 +1,387 @@
-body{margin:0}
+body {
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+header * a {
+    color: white
+}
+
+.white {
+    color: white
+}
+
+header {
+    position: absolute;
+    width: 1920px;
+    height: 149px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.headerback {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    background: #253DAC;
+}
+
+.logoback {
+    position: absolute;
+    left: 12.5%;
+    right: 75.57%;
+    top: 0%;
+    bottom: 0%;
+
+    background: rgba(11, 32, 134, 0.87);
+}
+
+.TMI_logo {
+    position: absolute;
+    left: 15.1%;
+    right: 78.18%;
+    top: 26.17%;
+    bottom: 26.85%;
+}
+
+header nav {
+    position: absolute;
+    left: 27.18%;
+    right: 31.98%;
+    top: 38.26%;
+    bottom: 42.95%;
+}
+
+.first-nav {
+    position: absolute;
+    left: 0%;
+    right: 63.33%;
+    top: 38.26%;
+    bottom: 42.95%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.second-nav {
+    position: absolute;
+    left: 15%;
+    right: 30%;
+    top: 38.26%;
+    bottom: 42.95%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.thrid-nav {
+    position: absolute;
+    left: 35%;
+    right: 0%;
+    top: 38.26%;
+    bottom: 42.95%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.fourth-nav {
+    position: absolute;
+    left: 85%;
+    right: 0%;
+    top: 38.26%;
+    bottom: 42.95%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.lock-1 {
+    position: absolute;
+    left: 81.82%;
+    right: 16.61%;
+    top: 39.6%;
+    bottom: 40.27%;
+}
+
+.login {
+    position: absolute;
+    left: 83.65%;
+    right: 12.5%;
+    top: 20%;
+    bottom: 45.26%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.main{
+    position: absolute;
+    width: 679.76px;
+    height: 508px;
+    left: 27%;
+    top:0;
+}
+
+main article{
+    position: absolute;
+    width: 1440px;
+    height: 508px;
+    left: 240px;
+    top: 149px;
+    
+    background: #1B5FAC;
+}
+
+li{list-style: none;}
+
+.category{
+    position: absolute;
+    width: 1371px;
+    height: 152px;
+    left: 275px;
+    top: 694px;
+}
+
+.category-img{padding-left: 40px;}
+
+.category1{
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    left: 0; 
+    padding: 0%;  
+}
+
+.category2{
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    left: 170px;
+    padding: 0%; 
+}
+
+.category3{
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    left: 340px;
+    padding: 0%;    
+}
+
+.category4{
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    left: 510px;
+    padding: 0%;   
+}
+
+.category5{
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    left: 680px; 
+    padding: 0%;   
+}
+
+.category6{
+    position: absolute;
+width: 170px;
+height: 150px;
+left: 850px;
+padding: 0%; 
+}
+
+.category7{
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    left: 1020px;
+    padding: 0%; 
+}
+
+.category8{
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    left: 1185px; 
+    padding: 0%;   
+}
+
+.category-font{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+.contest{
+    position: absolute;
+    width: 1440px;
+    height: 378px;
+    left: 240px;
+    top: 950px;
+}
+
+.point-font{
+    position: absolute;
+    width: 219px;
+    height: 42px;
+    left: 17px;
+    top: -13px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    
+    color: #FFFFFF;   
+}
+
+.point{
+    position: absolute;
+    width: 259px;
+    height: 82px;
+
+    background: #0F248B;
+}
+
+.contest-hr{margin-top: 80px; border: 3px solid #0F248B;}
+
+.contest1{
+    position: absolute;
+    width: 312px;
+    height: 265px;
+    left: 70px;
+    top: 130px;
+}
+
+.contest2{
+    position: absolute;
+width: 312px;
+height: 265px;
+left: 400px;
+    top: 130px;
+}
+
+.contest3{
+    position: absolute;
+width: 312px;
+height: 265px;
+left: 730px;
+    top: 130px;
+}
+
+.contest4{
+    position: absolute;
+width: 312px;
+height: 265px;
+left: 1060px;
+    top: 130px;
+}
+
+.contest-font{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+}
+
+.poster{
+    position: absolute;
+    width: 1338px;
+    height: 431.4px;
+    left: 292px;
+    top: 1470px;
+}
+
+.poster-img1{
+    position: absolute;
+    width: 312px;
+    height: 431.4px;
+    left: 20px;
+    top: 30px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.poster-img2{
+    position: absolute;
+    width: 312px;
+    height: 431.4px;
+    left: 350px;
+    top: 30px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.poster-img3{
+    position: absolute;
+    width: 312px;
+    height: 431.4px;
+    left: 680px;
+    top: 30px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.poster-img4{
+    position: absolute;
+    width: 312px;
+    height: 431.4px;
+    left: 1010px;
+    top: 30px;
+    
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+footer{
+    position: absolute;
+    width: 1920px;
+    height: 380px;
+    left: 0px;
+    top: 1986px;    
+    
+    background: #253DAC;
+}
