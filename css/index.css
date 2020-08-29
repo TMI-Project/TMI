@@ -375,3 +375,13 @@ text-align: center;
     border: 1px solid #000000;
     box-sizing: border-box;
 }
+
+footer{
+    position: absolute;
+    width: 1920px;
+    height: 380px;
+    left: 0px;
+    top: 1986px;    
+    
+    background: #253DAC;
+}
