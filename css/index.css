@@ -238,7 +238,7 @@ padding: 0%;
 }
 
 .category-font{
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
@@ -246,4 +246,80 @@ padding: 0%;
     text-align: center;
     padding-left: 10px;
     margin-top: 15px;
+}
+
+.contest{
+    position: absolute;
+    width: 1440px;
+    height: 378px;
+    left: 240px;
+    top: 950px;
+}
+
+.point-font{
+    position: absolute;
+    width: 219px;
+    height: 42px;
+    left: 17px;
+    top: -13px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    
+    color: #FFFFFF;   
+}
+
+.point{
+    position: absolute;
+    width: 259px;
+    height: 82px;
+
+    background: #0F248B;
+}
+
+.contest-hr{margin-top: 80px; border: 3px solid #0F248B;}
+
+.contest1{
+    position: absolute;
+    width: 312px;
+    height: 265px;
+    left: 70px;
+    top: 130px;
+}
+
+.contest2{
+    position: absolute;
+width: 312px;
+height: 265px;
+left: 400px;
+    top: 130px;
+}
+
+.contest3{
+    position: absolute;
+width: 312px;
+height: 265px;
+left: 730px;
+    top: 130px;
+}
+
+.contest4{
+    position: absolute;
+width: 312px;
+height: 265px;
+left: 1060px;
+    top: 130px;
+}
+
+.contest-font{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
 }
