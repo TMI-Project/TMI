@@ -1,6 +1,19 @@
 # ICT Project - 대회 모음 웹사이트
 
 
+## Commit Rule
+```txt
+    [ADD] 코드 추가 시
+
+    [FIX] 버그 수정 시
+
+    [Update] 코드 변경 시
+
+    [Remove] 코드 삭제 시
+
+    [Create] 파일 생성 시
+```
+
 
 ## INDEX
 ### 피드, 캘린더, 커뮤니티
