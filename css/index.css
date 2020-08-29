@@ -1,3 +1,31 @@
 body{margin:0}
 
 a{text-decoration: none; color: black;}
+
+header{
+    background-color: #253DAC;
+    color: #ffffff;
+    position: absolute;
+    width: 1920px;
+    height: 149px;
+    left: 0px;
+    top: 0px;
+}
+.logoback{
+    position: absolute;
+    left: 12.5%;
+    right: 75.57%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: rgba(11, 32, 134, 0.87);  
+}
+.TMI_logo{
+    position: absolute;
+    left: 15.1%;
+    position: absolute;
+    left: 15.1%;
+    right: 78.18%;
+    top: 26.17%;
+    bottom: 26.85%;
+}
