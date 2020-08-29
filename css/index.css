@@ -1,41 +1,50 @@
-body{margin:0}
+body {
+    margin: 0
+}
 
-a{text-decoration: none; color: black}
+a {
+    text-decoration: none;
+    color: black
+}
 
-header * a {color: white}
+header * a {
+    color: white
+}
 
-.white{color: white}
+.white {
+    color: white
+}
 
-header{
+header {
     position: absolute;
-width: 1920px;
-height: 149px;
-left: 0px;
-top: 0px;
+    width: 1920px;
+    height: 149px;
+    left: 0px;
+    top: 0px;
 
 }
 
-.headerback{
+.headerback {
     position: absolute;
     left: 0%;
     right: 0%;
     top: 0%;
     bottom: 0%;
-    
-    background: #253DAC; 
+
+    background: #253DAC;
 }
-.logoback{
+
+.logoback {
     position: absolute;
     left: 12.5%;
     right: 75.57%;
     top: 0%;
     bottom: 0%;
-    
-    background: rgba(11, 32, 134, 0.87);  
+
+    background: rgba(11, 32, 134, 0.87);
 }
-.TMI_logo{
-    position: absolute;
-    left: 15.1%;
+
+.TMI_logo {
     position: absolute;
     left: 15.1%;
     right: 78.18%;
@@ -43,36 +52,21 @@ top: 0px;
     bottom: 26.85%;
 }
 
-header nav{
+header nav {
     position: absolute;
     left: 33.18%;
     right: 31.98%;
     top: 38.26%;
-    bottom: 42.95%;     
+    bottom: 42.95%;
 }
 
-.first-nav{
+.first-nav {
     position: absolute;
-    left: 33.18%;
+    left: 0%;
     right: 63.33%;
     top: 38.26%;
     bottom: 42.95%;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
-}
-
-.second-nav{
-    position: absolute;
-    left: 42.71%;
-    right: 53.8%;
-    top: 38.26%;
-    bottom: 42.95%;
-    
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -81,13 +75,13 @@ text-align: center;
     text-align: center;
 }
 
-.thrid-nav{
+.second-nav {
     position: absolute;
-    left: 52.4%;
-    right: 42.97%;
+    left: 15%;
+    right: 30%;
     top: 38.26%;
     bottom: 42.95%;
-    
+
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -96,40 +90,55 @@ text-align: center;
     text-align: center;
 }
 
-.fourth-nav{
+.thrid-nav {
     position: absolute;
-left: 63.39%;
-right: 31.98%;
-top: 38.26%;
-bottom: 42.95%;
+    left: 35%;
+    right: 0%;
+    top: 38.26%;
+    bottom: 42.95%;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 28px;
-text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
 }
 
-.lock-1{
+.fourth-nav {
     position: absolute;
-left: 81.82%;
-right: 16.61%;
-top: 39.6%;
-bottom: 40.27%;
+    left: 85%;
+    right: 0%;
+    top: 38.26%;
+    bottom: 42.95%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
 }
 
-.login{
+.lock-1 {
     position: absolute;
-left: 83.65%;
-right: 12.5%;
-top: 38.26%;
-bottom: 38.26%;
+    left: 81.82%;
+    right: 16.61%;
+    top: 39.6%;
+    bottom: 40.27%;
+}
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
+.login {
+    position: absolute;
+    left: 83.65%;
+    right: 12.5%;
+    top: 20%;
+    bottom: 45.26%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
 }
