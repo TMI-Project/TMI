@@ -54,7 +54,7 @@ header {
 
 header nav {
     position: absolute;
-    left: 33.18%;
+    left: 27.18%;
     right: 31.98%;
     top: 38.26%;
     bottom: 42.95%;
@@ -141,4 +141,22 @@ header nav {
     font-size: 30px;
     line-height: 35px;
     text-align: center;
+}
+
+.main{
+    position: absolute;
+    width: 679.76px;
+    height: 508px;
+    left: 27%;
+    top:0;
+}
+
+main article{
+    position: absolute;
+    width: 1440px;
+    height: 508px;
+    left: 240px;
+    top: 149px;
+    
+    background: #1B5FAC;
 }
