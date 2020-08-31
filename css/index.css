@@ -1,5 +1,6 @@
 body {
-    margin: 0
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -384,4 +385,30 @@ footer{
     top: 2012px;    
     
     background: #253DAC;
+}
+
+.TMI-logo2{
+    position: absolute;
+    left: 3%;
+    right: 78.91%;
+    top: 8%;
+    bottom: 64.47%;
+}
+
+.TMI-footer{
+    position: absolute;
+    left: 11.77%;
+    right: 75.31%;
+    top: 12.15%;
+    bottom: 52.82%;
+}
+
+.TMI-p{
+    position: absolute;
+    left: 0%;
+    right: 17%;
+    top: 70%;
+    bottom: 0%;
+    font-size: 17px;
+    text-align: center;
 }
