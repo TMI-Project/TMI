@@ -8,7 +8,7 @@ a {
     color: black
 }
 
-header * a {
+header * a, footer * a{
     color: white
 }
 
@@ -412,3 +412,13 @@ footer{
     font-size: 17px;
     text-align: center;
 }
+
+footer nav{
+    position: absolute;
+    left: 28%;
+    right: 60%;
+    top: 18%;
+    bottom: 46.84%;
+}
+
+footer nav ul{margin: 12px; font-size: 20px;}
