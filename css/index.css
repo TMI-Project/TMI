@@ -422,3 +422,39 @@ footer nav{
 }
 
 footer nav ul{margin: 12px; font-size: 20px;}
+
+address{
+    position: absolute;
+    left: 52.08%;
+    right: 41.56%;
+    top: 16.84%;
+    bottom: 66.58%;
+
+    width: 280px;
+}
+
+address p, address h3{
+    margin: 5px 0 0 0; 
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;    
+}
+address div{margin-bottom: 20px;}
+
+.about{
+    position: absolute;
+    left: 75%;
+    right: 10%;
+    top: 16.84%;
+    bottom: 76.84%;
+}
+
+footer div ul{
+    margin: 0 0 5px 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
