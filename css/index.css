@@ -146,6 +146,112 @@ header nav {
     text-align: center;
 }
 
+footer{
+    position: absolute;
+    width: 1920px;
+    height: 380px;
+    left: 0px;
+    top: 2012px;    
+    
+    background: #253DAC;
+}
+
+.TMI-logo2{
+    position: absolute;
+    left: 3%;
+    right: 78.91%;
+    top: 8%;
+    bottom: 64.47%;
+}
+
+.TMI-footer{
+    position: absolute;
+    left: 11.77%;
+    right: 75.31%;
+    top: 12.15%;
+    bottom: 52.82%;
+}
+
+.TMI-p{
+    position: absolute;
+    left: 0%;
+    right: 17%;
+    top: 70%;
+    bottom: 0%;
+    font-size: 17px;
+    text-align: center;
+}
+
+footer nav{
+    position: absolute;
+    left: 28%;
+    right: 60%;
+    top: 18%;
+    bottom: 46.84%;
+}
+
+footer nav ul{margin: 12px; font-size: 20px;}
+
+address{
+    position: absolute;
+    left: 52.08%;
+    right: 41.56%;
+    top: 16.84%;
+    bottom: 66.58%;
+
+    width: 280px;
+}
+
+address p, address h3{
+    margin: 5px 0 0 0; 
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;    
+}
+address div{margin-bottom: 20px;}
+
+.about{
+    position: absolute;
+    left: 75%;
+    right: 10%;
+    top: 16.84%;
+    bottom: 76.84%;
+}
+
+footer div ul{
+    margin: 0 0 5px 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer-hr{
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: 70.53%;
+    bottom: 29.47%;
+
+    width: 1440px;
+}
+
+.copyright{
+    position: absolute;
+    left: 12.5%;
+    right: 76.04%;
+    top: 80%;
+    bottom: 15.79%;
+    
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 16px;
+}
+
 .main{
     position: absolute;
     width: 679.76px;
@@ -329,9 +435,9 @@ text-align: center;
 
 .poster{
     position: absolute;
-    width: 1338px;
+    width: 1440px;
     height: 431.4px;
-    left: 292px;
+    left: 240px;
     top: 1371px;
 }
 
@@ -339,8 +445,8 @@ text-align: center;
     position: absolute;
     width: 312px;
     height: 431.4px;
-    left: 20px;
-    top: 30px;
+    left: 70px;
+    top: 130px;
     
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -350,8 +456,8 @@ text-align: center;
     position: absolute;
     width: 312px;
     height: 431.4px;
-    left: 350px;
-    top: 30px;
+    left: 400px;
+    top: 130px;
     
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -361,8 +467,8 @@ text-align: center;
     position: absolute;
     width: 312px;
     height: 431.4px;
-    left: 680px;
-    top: 30px;
+    left: 730px;
+    top: 130px;
     
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -372,115 +478,9 @@ text-align: center;
     position: absolute;
     width: 312px;
     height: 431.4px;
-    left: 1010px;
-    top: 30px;
+    left: 1060px;
+    top: 130px;
     
     border: 1px solid #000000;
     box-sizing: border-box;
-}
-
-footer{
-    position: absolute;
-    width: 1920px;
-    height: 380px;
-    left: 0px;
-    top: 2012px;    
-    
-    background: #253DAC;
-}
-
-.TMI-logo2{
-    position: absolute;
-    left: 3%;
-    right: 78.91%;
-    top: 8%;
-    bottom: 64.47%;
-}
-
-.TMI-footer{
-    position: absolute;
-    left: 11.77%;
-    right: 75.31%;
-    top: 12.15%;
-    bottom: 52.82%;
-}
-
-.TMI-p{
-    position: absolute;
-    left: 0%;
-    right: 17%;
-    top: 70%;
-    bottom: 0%;
-    font-size: 17px;
-    text-align: center;
-}
-
-footer nav{
-    position: absolute;
-    left: 28%;
-    right: 60%;
-    top: 18%;
-    bottom: 46.84%;
-}
-
-footer nav ul{margin: 12px; font-size: 20px;}
-
-address{
-    position: absolute;
-    left: 52.08%;
-    right: 41.56%;
-    top: 16.84%;
-    bottom: 66.58%;
-
-    width: 280px;
-}
-
-address p, address h3{
-    margin: 5px 0 0 0; 
-    font-weight: normal;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21px;    
-}
-address div{margin-bottom: 20px;}
-
-.about{
-    position: absolute;
-    left: 75%;
-    right: 10%;
-    top: 16.84%;
-    bottom: 76.84%;
-}
-
-footer div ul{
-    margin: 0 0 5px 0;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.footer-hr{
-    position: absolute;
-    left: 12.5%;
-    right: 12.5%;
-    top: 70.53%;
-    bottom: 29.47%;
-
-    width: 1440px;
-}
-
-.copyright{
-    position: absolute;
-    left: 12.5%;
-    right: 76.04%;
-    top: 80%;
-    bottom: 15.79%;
-    
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 16px;
 }
