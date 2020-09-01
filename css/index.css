@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
 
 body {
+    text-align: center;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -152,6 +153,8 @@ footer{
     height: 380px;
     left: 0px;
     top: 2012px;    
+
+    text-align: left;
     
     background: #253DAC;
 }
