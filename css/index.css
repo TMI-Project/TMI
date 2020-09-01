@@ -20,7 +20,7 @@ header * a, footer * a{
 
 header {
     position: absolute;
-    width: 1920px;
+    width: 1903px;
     height: 108px;
     left: 0px;
     top: 0px;
@@ -148,7 +148,7 @@ header nav {
 
 footer{
     position: absolute;
-    width: 1920px;
+    width: 1903px;
     height: 380px;
     left: 0px;
     top: 2012px;    
@@ -252,22 +252,12 @@ footer div ul{
     line-height: 16px;
 }
 
-.main{
-    position: absolute;
-    width: 679.76px;
-    height: 508px;
-    left: 27%;
-    top:0;
-}
-
 main article{
     position: absolute;
     width: 1440px;
     height: 508px;
     left: 240px;
     top: 108px;
-    
-    background: #1B5FAC;
 }
 
 li{list-style: none;}
