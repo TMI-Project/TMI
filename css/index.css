@@ -267,10 +267,10 @@ li{list-style: none;}
 
 .category{
     position: absolute;
-    width: 1371px;
-    height: 152px;
-    left: 275px;
-    top: 685px;
+    width: 1409px;
+    height: 143px;
+    left: 220px;
+    top: 660px;
 }
 
 .category-img{padding-left: 40px;}
@@ -278,76 +278,91 @@ li{list-style: none;}
 .category1{
     position: absolute;
     width: 170px;
-    height: 150px;
-    left: 0; 
+    height: 100px;
+    left: 0px; 
     padding: 0%;  
 }
 
 .category2{
     position: absolute;
-    width: 170px;
-    height: 150px;
-    left: 170px;
+    width: 150px;
+    height: 100px;
+    left: 150px;
     padding: 0%; 
 }
 
 .category3{
     position: absolute;
     width: 170px;
-    height: 150px;
-    left: 340px;
+    height: 100px;
+    left: 290px;
     padding: 0%;    
 }
 
 .category4{
     position: absolute;
-    width: 170px;
-    height: 150px;
-    left: 510px;
+    width: 150px;
+    height: 100px;
+    left: 440px;
     padding: 0%;   
 }
 
 .category5{
     position: absolute;
-    width: 170px;
-    height: 150px;
-    left: 680px; 
+    width: 200px;
+    height: 100px;
+    left: 560px; 
     padding: 0%;   
 }
 
 .category6{
     position: absolute;
-width: 170px;
-height: 150px;
-left: 850px;
-padding: 0%; 
+    width: 150px;
+    height: 100px;
+    left: 730px;
+    padding: 0%; 
 }
 
 .category7{
     position: absolute;
-    width: 170px;
-    height: 150px;
-    left: 1020px;
+    width: 200px;
+    height: 100px;
+    left: 860px;
     padding: 0%; 
 }
 
 .category8{
     position: absolute;
-    width: 170px;
-    height: 150px;
-    left: 1185px; 
+    width: 150px;
+    height: 100px;
+    left: 1030px; 
     padding: 0%;   
+}
+
+.category9{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    left: 1170px; 
+    padding: 0%; 
+}
+
+.category10{
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    left: 1300px; 
+    padding: 0%; 
 }
 
 .category-font{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
-    line-height: 35px;
-    text-align: center;
-    padding-left: 10px;
-    margin-top: 15px;
+    font-size: 23px;
+    line-height: 28px;
+    padding-left: 35px;
+    margin-top: 10px;
 }
 
 .contest{
@@ -355,7 +370,7 @@ padding: 0%;
     width: 1440px;
     height: 378px;
     left: 240px;
-    top: 906px;
+    top: 937px;
 }
 
 .point-font{
@@ -431,7 +446,7 @@ text-align: center;
     width: 1440px;
     height: 431.4px;
     left: 240px;
-    top: 1371px;
+    top: 1402px;
 }
 
 .poster-img1{
