@@ -261,11 +261,27 @@ main article{
     height: 508px;
     left: 240px;
     top: 108px;
+
+    background-color: #253DAC;
 }
 
 .mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+.left, .right, .badge {cursor:pointer}
+.badge {
+    margin-bottom: 5px;
+    padding: 0 8px 0 8px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.border {border:1px solid}
+.padding-right{padding-right: 16px; float: right;}
+.padding-left{padding-left: 16px; float: left;}
+.section{
+    position: relative;
+    bottom: 40px;
+    color: #ffffffb9;
+}
+
 
 li{list-style: none;}
 
