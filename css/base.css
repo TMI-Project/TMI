@@ -10,6 +10,8 @@ a {
     color: black
 }
 
+li{list-style: none;}
+
 header * a, footer * a{
     color: white
 }
