@@ -3,15 +3,17 @@
 
 ## Commit Rule
 ```txt
-    [ADD] 코드 추가 시
-
     [FIX] 버그 수정 시
 
+    [ADD] 코드 추가 시
+    
     [Update] 코드 변경 시
 
     [Remove] 코드 삭제 시
 
     [Create] 파일 생성 시
+
+    [Delete] 파일 삭제 시
 ```
 ##### [깃 다루는 방법](./GitCommand.md)
 
