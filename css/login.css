@@ -9,31 +9,16 @@
     height: 500px;
 }
 #loginID{
-    width: 650px;
+    width: 680px;
     height: 50px;
     border: solid 0px;
     font-size: 18px;
 }
 #loginPASSWORD{
-    width: 650px;
+    width: 680px;
     height: 50px;
     border: solid 0px;
     font-size: 18px;
-}
-#loginbutton{
-    width: 720px;
-    height: 80px;
-    margin-bottom: 15px;
-    background-color: #0B2086;
-    color: white;
-    font-size: 17px;
-}
-#membershipbutton{
-    width: 720px;
-    height: 80px;
-    background-color: white;
-    color: #0B2086;
-    font-size: 17px;
 }
 .IDbox{
     width: 700px;
@@ -49,4 +34,19 @@
     padding: 10px;
     border: solid 1px;
     margin-bottom: 34px;
+}
+#loginbutton{
+    width: 720px;
+    height: 80px;
+    margin-bottom: 15px;
+    background-color: #0B2086;
+    color: white;
+    font-size: 17px;
+}
+#membershipbutton{
+    width: 720px;
+    height: 80px;
+    background-color: white;
+    color: #0B2086;
+    font-size: 17px;
 }

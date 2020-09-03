@@ -9,14 +9,20 @@
 <body>
     <div class="contant">
         <img src="../images/TMI-logo.png" alt="TMI-logo.black" width="222" height="120">
-        <div class="IDbox">
-            <input type="ID" id="loginID" name="login.id" placeholder="아이디">
-        </div>
-        <div class="PASSWORDbox">
-            <input type="PASSWORD" id="loginPASSWORD" name="login.password" placeholder="비밀번호">
-        </div>
-        <button type="login" id="loginbutton">로그인</button>
-        <button type="join.membership" id="membershipbutton">회원가입</button>
+        <form method="POST">   
+            <div class="IDbox">
+                <input type="ID" id="loginID" name="login.id" placeholder="아이디">
+            </div>
+            <div class="PASSWORDbox">
+                <input type="PASSWORD" id="loginPASSWORD" name="login.password" placeholder="비밀번호">
+            </div>
+        </form> 
+        <form method="POST" action="#">
+            <input type="submit" id="loginbutton" title="로그인" value="로그인">
+        </form>
+        <form method="GET" action="#">
+            <input type="submit" id="membershipbutton" title="회원가입" value="회원가입">
+        </form>
     </div>
 </body>
 </html>
