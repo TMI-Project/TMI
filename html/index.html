@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="import" href="base.html">
+    <script src="../js/index.js"></script>
     <title>TMI</title>
 </head>
 
@@ -43,8 +44,17 @@
 
     <!-- 슬라이드 -->
     <main>
-        <article>
-            <img class="main" src="../images/Banner.png" alt="main" width="1440" height="508">
+        <article class="w3-content w3-display-container">
+            <img class="mySlides" src="../images/Banner.png" alt="slides1" width="1440" height="508">
+            <img class="mySlides" src="../images/echo.png" alt="slides2">
+            <img class="mySlides" src="../images/kisa.png" alt="slides3">
+            <div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
+                <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+              </div>
         </article>
     </main>
 
