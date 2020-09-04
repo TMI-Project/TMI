@@ -16,7 +16,8 @@ const Account = new Schema({
     createAt: { type : Date, default : Date.now }
 });
 
-Account.statics.localRegister = function( { username, email, ID, password, nickname, gender, age, career, specializedField, area, job, interestingField}){
+Account.statics.localRegister = function( { username, email, ID, password
+    ,nickname = "None", gender = "None", age = "None", career = "None", specializedField = "None", area = "None", job = "None", interestingField = "None"}){
     const account = new this({
         username,
         email,
@@ -34,3 +35,16 @@ Account.statics.localRegister = function( { username, email, ID, password, nickn
 
     return account.save();
 };
+
+Account.methods.generateToken = function(){
+    const payload = {
+        _id:this._id,
+        age: this.age,
+        specializedField : this.specializedField,
+        area : this. area,
+        job : this.job,
+        interestingField : this.interestingField
+    };
+
+    return generateToken(payload, 'account');
+}
