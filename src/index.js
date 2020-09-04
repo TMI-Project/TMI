@@ -29,7 +29,9 @@ mongoose.connect(process.env.MONGO_URI, {//DB연결
 
 app.use(bodyParser());
 
+
 router.use('/account', account.routes());
+
 app.use(router.routes()).use(router.allowedMethods());
 
 
