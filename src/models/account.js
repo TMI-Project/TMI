@@ -1,25 +1,36 @@
 const mongoose = require('mongoose');
 const crypto = require('crypto');
-
+const { generateToken } = require('lib/token');
 
 const { Schema } = mongoose;
 
 function hash(password){
-    return crypto.createHmac('sha256', process.env.SECRET_KEY).update(passowrd).digest('hex');
+    return crypto.createHmac('sha256', process.env.SECRET_KEY).update(password).digest('hex');
 
 }
 
 const Account = new Schema({
     userName : String,
+    Name : String,
     email : String,
     password: String,
+    ID: String,
+    nickname: String,
+    gender: String,
+    age : Number,
+    career: String,
+    specializedField: String,
+    area: String,
+    job: String,
+    interestingField: String,
     createAt: { type : Date, default : Date.now }
+
 });
 
 Account.statics.localRegister = function( { username, email, ID, password
-    ,nickname = "None", gender = "None", age = "None", career = "None", specializedField = "None", area = "None", job = "None", interestingField = "None"}){
+    ,nickname = "None", gender = "None", age = 20, career = "None", specializedField = "None", area = "None", job = "None", interestingField = "None"}){
     const account = new this({
-        username,
+        Name : username,
         email,
         ID,
         password : hash(password),
@@ -48,3 +59,5 @@ Account.methods.generateToken = function(){
 
     return generateToken(payload, 'account');
 }
+
+module.exports = mongoose.model('Account', Account);
