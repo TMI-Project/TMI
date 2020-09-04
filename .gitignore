@@ -1,6 +1,6 @@
 package.json
 yarn.lock
-node_modules/*
+node_modules
 *.env
 yarn-error.log
 jsconfig.json
