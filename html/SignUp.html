@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/SignUp.css">
+    <title>TMI</title>
 </head>
 <body>
-    
+    <div class="contain">
+        <img src="../images/TMI-logo.png" alt="TMI-logo.black" width="222" height="120">
+        <form method="POST" action="#">
+            <div class="IDblank">
+                <h3>아이디</h3>
+                <input type="id" id="signupID" name="signup.id" placeholder="아이디를 입력하시오">
+            </div>
+            <div class="PASSWORDblank">
+                <h3>비밀번호</h3>
+                <input type="password" id="signupPASSWORD" name="signup.password" placeholder="비밀번호를 입력하시오">
+                <h3>비밀번호 재확인</h3>
+                <input type="password" id="againPASSWORD" name="again.password" placeholder="비밀번호를 다시 입력하시오">
+            </div>
+            <div class="NAMEblank">
+                <h3>이름</h3>
+                <input type="name" id="signupNAME" name="signup.name" placeholder="이름을 입력하시오">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
