@@ -22,7 +22,7 @@ header * a, footer * a{
 
 header {
     position: absolute;
-    width: 1903px;
+    width: 1900px;
     height: 108px;
     left: 0px;
     top: 0px;
@@ -150,7 +150,7 @@ header nav {
 
 footer{
     position: absolute;
-    width: 1903px;
+    width: 1900px;
     height: 380px;
     left: 0px;
     top: 2012px;    
