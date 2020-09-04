@@ -3,3 +3,4 @@ yarn.lock
 node_modules/*
 *.env
 yarn-error.log
+jsconfig.json
