@@ -5,13 +5,16 @@ const Router = require('koa-router');
 
 const app = new Koa();
 const router = new Router();
-const api = require('./api');
+const account = require('./account');
 
 const mongoose = require('mongoose');
 const bodyParser = require('koa-bodyparser');
 
+const port = process.env.PORT || 4000;
+
 mongoose.Promise = global.Promise;//node 네이티브 promise사용
 mongoose.set('useFindAndModify', false);
+
 mongoose.connect(process.env.MONGO_URI, {//DB연결
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -23,15 +26,19 @@ mongoose.connect(process.env.MONGO_URI, {//DB연결
     console.error(e);
 });
 
-const port = process.env.PORT || 4000;
 
 app.use(bodyParser());
 
-router.use('/api', api.routes());
+router.get('/', (ctx, next) => {
+    ctx.body = "index";
+});
+
+router.use('/account', account.routes());
+
 app.use(router.routes()).use(router.allowedMethods());
 
 
-app.listen(4000, () => {
+app.listen(port, () => {
     console.log('it is listening to port 4000');
 });
 
