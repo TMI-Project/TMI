@@ -6,7 +6,7 @@ const { Schema } = mongoose;
 
 function hash(password){
     return crypto.createHmac('sha256', process.env.SECRET_KEY).update(passowrd).digest('hex');
-    
+
 }
 
 const Account = new Schema({
@@ -16,3 +16,21 @@ const Account = new Schema({
     createAt: { type : Date, default : Date.now }
 });
 
+Account.statics.localRegister = function( { username, email, ID, password, nickname, gender, age, career, specializedField, area, job, interestingField}){
+    const account = new this({
+        username,
+        email,
+        ID,
+        password : hash(password),
+        nickname,
+        gender,
+        age,
+        career,
+        specializedField,
+        area,
+        job,
+        interestingField
+    });
+
+    return account.save();
+};

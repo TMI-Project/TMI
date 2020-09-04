@@ -29,6 +29,9 @@ mongoose.connect(process.env.MONGO_URI, {//DB연결
 
 app.use(bodyParser());
 
+router.get('/', (ctx, next) => {
+    ctx.body = "index";
+});
 
 router.use('/account', account.routes());
 
