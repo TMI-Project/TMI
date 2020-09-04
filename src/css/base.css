@@ -10,6 +10,8 @@ a {
     color: black
 }
 
+li{list-style: none;}
+
 header * a, footer * a{
     color: white
 }
@@ -20,7 +22,7 @@ header * a, footer * a{
 
 header {
     position: absolute;
-    width: 1920px;
+    width: 1903px;
     height: 108px;
     left: 0px;
     top: 0px;
@@ -146,80 +148,9 @@ header nav {
     text-align: center;
 }
 
-.search-wrap {
-    margin-left: 424px;
-    margin-top: 179px;
-    height: 75px;
-    width: 1072px;
-    position: absolute;
-}
-
-.search-bar{
-    border: 2px solid #0F248B;
-    border-radius: 1px;
-    height: 71px;
-    float: left;
-}
-
-.select-item{
-    float: left;
-}
-
-.select-item>select {
-    float: left;
-    width: 205px;
-    height: 51px;
-    margin-top: 10px;
-    padding-left: 13px;
-    border-style: none;
-    font-size: 24px;
-    color: #0F248B;
-    background: url('../images/Vector1.png') no-repeat 95% 50%;
-    text-align: center;
-    border-radius: 0px;
-    border-style: none;
-    border-right: 2px solid #0F248B;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none; appearance: none;
-}
-.select-item>select::-ms-expand { display: none; }
-
-.search-bar>input {
-    width: 614px;
-    height: 71px;
-    padding: 0 20px;
-    padding-left: 20px;
-    font-size: 20px;
-    border-style: none;
-    -webkit-appearance: none;
-    -moz-appearance: none; appearance: none;
-}
-.search-bar>input::-ms-expand { display: none; }
-.search-bar>input:focus { outline:none; }
-
-.search-wrap>button{
-    position: absolute;
-    width: 186px;
-    height: 75px;
-    padding: 0;
-    margin-left: 23px;
-    border-style: none;
-    font-size: 24px;
-    color: #ffffff;
-    background-color: #0F248B;
-    outline: none;
-    cursor: pointer;
-}
-
-.search-wrap>button:active {
-    background-color: #253DAC;
-    transition: background 0.0s;
-}
-
 footer{
     position: absolute;
-    width: 1920px;
+    width: 1903px;
     height: 380px;
     left: 0px;
     top: 2012px;    

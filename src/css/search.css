@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+.search-wrap {
+    margin-left: 424px;
+    margin-top: 179px;
+    height: 75px;
+    width: 1072px;
+    position: absolute;
+}
+
+.search-bar{
+    border: 2px solid #0F248B;
+    border-radius: 1px;
+    height: 71px;
+    float: left;
+}
+
+.select-item{
+    float: left;
+}
+
+.select-item>select {
+    float: left;
+    width: 205px;
+    height: 51px;
+    margin-top: 10px;
+    padding-left: 13px;
+    border-style: none;
+    font-size: 24px;
+    color: #0F248B;
+    background: url('../images/Vector1.png') no-repeat 95% 50%;
+    text-align: center;
+    border-radius: 0px;
+    border-style: none;
+    border-right: 2px solid #0F248B;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none; appearance: none;
+}
+.select-item>select::-ms-expand { display: none; }
+
+.search-bar>input {
+    width: 614px;
+    height: 71px;
+    padding: 0 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    border-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; appearance: none;
+}
+.search-bar>input::-ms-expand { display: none; }
+.search-bar>input:focus { outline:none; }
+
+.search-wrap>button{
+    position: absolute;
+    width: 186px;
+    height: 75px;
+    padding: 0;
+    margin-left: 23px;
+    border-style: none;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #0F248B;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-wrap>button:active {
+    background-color: #253DAC;
+    transition: background 0.0s;
+}
+
+.section-wrap {
+    width: auto;
+    height: auto;
+    margin: 314px 0 0 0;
+    position: absolute;
+}
+
+.section-wrap>p {
+    width: 300px;
+    padding: 0;
+    margin: 0 0 0 810px;
+    position: relative;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.Post-wrap {
+    width: 1440px;
+    margin: 95px 0 0 210px;
+}
+
+.Post-space {
+    width: 1440px;
+    height: 250px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border-style: solid;
+    border-spacing: 25px;
+}
+
+.Post-cell {
+    width: 1440px;
+    height: 250px;
+}
+
+.Post-item {
+    width: 1440px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+}
+
+.Post-item>div {
+    width: 1440px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+}
+
+.Post-img {
+    width: 200px;
+    height: 200px;
+    margin: 26px 22px;
+    padding: 0;
+    border-width: 2px;
+    
+}
+
+.Post-img>img {
+    width: 152px;
+    height: 152px;
+    margin: 24px 0 0 24px;
+}
