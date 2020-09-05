@@ -47,7 +47,7 @@
                 <select name="st"><option value="">통합검색</option><option value="contest_all">전체공모전</option><option value="1">디자인</option><option value="2">광고/마케팅</option><option value="3">게임</option><option value="4">기획/아이디어</option><option value="5">문학/수기</option><option value="6">네이밍/슬로건</option><option value="7">취업/창업</option><option value="8">소프트웨어</option><option value="9">기타</option></select>
             </div>
             <input type="text" name="sw" value="" alt="검색어 입력" onkeypress="if(event.keyCode == 13) Search();" placeholder="검색어 입력">
-        </div>
+        </div>                                                                  <!--엔터키 사용시 서치-->
         
         <button type="button" onclick="Search()" class="btn-search" alt="검색" title="검색"><div class="shading"></div>검색</button>
     </form>
@@ -55,7 +55,7 @@
     <section class="section-wrap">
         <p>전체 공모전</p>
         <article class="Post-wrap">
-            <table border="0" class="Post-space">
+            <table border="0" class="Post-space" name="Post">
                 <tr class="Post-cell">
                     <td class="Post-item">
                         <div class="Post-img"><img src="../images/category.png"></div>
@@ -113,7 +113,7 @@
                 </tr>
             </table>
             <div class="paging-wrap">
-                <div class="paging">
+                <div class="paging" id="pages">
                     <a href="#" class="prev disabled">
                         <i class="fa fa-caret-left" aria-hidden="true"></i>
                         <i class="fa fa-caret-left" aria-hidden="true"></i>
@@ -122,19 +122,19 @@
                         <i class="fa fa-caret-left" aria-hidden="true"></i>
                         <span><</span>
                     </a>
-                    <a href="#" class="number on">
+                    <a href="search?page=1" class="number on">
                         <span>1</span>
                     </a>
-                    <a href="search.html?page=2" class="number">
+                    <a href="search?page=2" class="number">
                         <span>2</span>
                     </a>
-                    <a href="search.html?page=3" class="number">
+                    <a href="search?page=3" class="number">
                         <span>3</span>
                     </a>
-                    <a href="search.html?page=4" class="number">
+                    <a href="search?page=4" class="number">
                         <span>4</span>
                     </a>
-                    <a href="search.html?page=5" class="number">
+                    <a href="search?page=5" class="number">
                         <span>5</span>
                     </a>
                     <a class="next" href="search.html?page=6">
