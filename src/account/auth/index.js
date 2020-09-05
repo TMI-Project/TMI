@@ -7,7 +7,7 @@ const authCtrl = require('./auth.controller');
 
 
 auth.get('/register', async function(req, res, next){
-    res.render("src/html/SignUp");
+    res.render("html/SignUp");
 });
 auth.post('/register', authCtrl.localRegister);//http://localhost:4000/account/auth/register
 
