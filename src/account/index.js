@@ -1,9 +1,8 @@
-const Router = require('koa-router');
+const express = require("express");
 
-const account = new Router();
+const router = express.Router();
+const account = express();
 
-const auth = require("./auth");
-
-account.use('/auth', auth.routes());
+account.use("/auth", require("./auth"));
 
 module.exports = account;

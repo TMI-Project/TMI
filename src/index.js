@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('koa-bodyparser');
 // const express = require('express');
 
-const app = new express();
+const app = express();
 
 
 
@@ -33,11 +33,13 @@ app.use(function (req, res, next){
     next();
 });
 
+app.use("/account", require("./account"));
+
 
 app.get('/register', async function(req, res){
     res.send("<h1>Hello World<h1>");
 });
-app.use("/account", require("./account"));
+
 
 
 app.listen(port, () => {
