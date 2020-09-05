@@ -1,8 +1,13 @@
 const express = require("express");
 
 const router = express.Router();
-const account = express();
 
-account.use("/auth", require("./auth"));
+router.use("/account", require("./account"));
 
-module.exports = account;
+router.get('/', async function (req, res){
+    res.render('index.html');
+});
+
+module.exports = router;
+    
+    

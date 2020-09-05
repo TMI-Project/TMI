@@ -1,13 +1,11 @@
 require('dotenv').config();
 
 const express = require('express');
-
+const app = express();
 
 const mongoose = require('mongoose');
-const bodyParser = require('koa-bodyparser');
-// const express = require('express');
+const routes = require('./router/index');
 
-const app = express();
 
 
 
@@ -39,7 +37,7 @@ app.use(function (req, res, next){
     next();
 });
 
-app.use("/account", require("./account"));
+app.use("/", routes);
 
 
 app.get('/register', async function(req, res){

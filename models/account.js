@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const crypto = require('crypto');
-const { generateToken } = require('lib/token');
+const { generateToken } = require('../lib/token');
 
 const { Schema } = mongoose;
 
