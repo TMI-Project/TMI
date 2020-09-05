@@ -1,16 +1,14 @@
 require('dotenv').config();
 
-const Koa = require('koa');
-const Router = require('koa-router');
-const send = require('koa-send');
+const express = require('express');
+
 
 const mongoose = require('mongoose');
 const bodyParser = require('koa-bodyparser');
 // const express = require('express');
 
-const app = new Koa();
-const router = new Router();
-const account = require('./account');
+const app = new express();
+
 
 
 const port = process.env.PORT || 4000;
@@ -30,36 +28,16 @@ mongoose.connect(process.env.MONGO_URI, {//DB연결
 });
 
 
-app.use(bodyParser());
-// app.use('/css', express.static(__dirname + "/../css/"));
-// app.use('/jpg', express.static(__dirname + "/../jpg/"));
-
-
-
-const render = require('koa-ejs');
-
-
-render(app, {
-    root: 'src/html',
-    layout: false,
-    viewExt: 'html',
-    cache: false,
-    debug: false,
+app.use(function (req, res, next){
+    console.log('Time : ', Date.now());
+    next();
 });
 
 
-router.get('/register', async (ctx) => {
-    await ctx.render('SignUp');
+app.get('/register', async function(req, res){
+    res.send("<h1>Hello World<h1>");
 });
-
-
-router.get('/', (ctx, next) => {
-    ctx.body = "index";
-});
-
-router.use('/account', account.routes());
-
-app.use(router.routes()).use(router.allowedMethods());
+app.use("/account", require("./account"));
 
 
 app.listen(port, () => {
