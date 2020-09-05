@@ -2,13 +2,16 @@ require('dotenv').config();
 
 const Koa = require('koa');
 const Router = require('koa-router');
+const send = require('koa-send');
+
+const mongoose = require('mongoose');
+const bodyParser = require('koa-bodyparser');
+// const express = require('express');
 
 const app = new Koa();
 const router = new Router();
 const account = require('./account');
 
-const mongoose = require('mongoose');
-const bodyParser = require('koa-bodyparser');
 
 const port = process.env.PORT || 4000;
 
@@ -28,6 +31,27 @@ mongoose.connect(process.env.MONGO_URI, {//DB연결
 
 
 app.use(bodyParser());
+// app.use('/css', express.static(__dirname + "/../css/"));
+// app.use('/jpg', express.static(__dirname + "/../jpg/"));
+
+
+
+const render = require('koa-ejs');
+
+
+render(app, {
+    root: 'src/html',
+    layout: false,
+    viewExt: 'html',
+    cache: false,
+    debug: false,
+});
+
+
+router.get('/register', async (ctx) => {
+    await ctx.render('SignUp');
+});
+
 
 router.get('/', (ctx, next) => {
     ctx.body = "index";
@@ -40,6 +64,7 @@ app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(port, () => {
     console.log('it is listening to port 4000');
+    console.log(`open http://localhost:${port}`);
 });
 
 
