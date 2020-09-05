@@ -28,6 +28,10 @@ mongoose.connect(process.env.MONGO_URI, {//DB연결
 });
 
 
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'ejs');
+
+app.use(express.static(__dirname));
 app.use(function (req, res, next){
     console.log('Time : ', Date.now());
     next();
