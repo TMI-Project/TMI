@@ -4,3 +4,4 @@ node_modules
 *.env
 yarn-error.log
 jsconfig.json
+package-lock.json
