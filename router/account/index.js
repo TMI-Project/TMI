@@ -1,8 +1,14 @@
 const express = require("express");
 
-const router = express.Router();
-const account = express();
+const auth = express.Router();
 
-account.use("/auth", require("./auth"));
 
-module.exports = account;
+const authCtrl = require('./auth.controller');
+
+
+auth.get('/register', async function(req, res, next){
+    res.render("SignUp.html");
+});
+auth.post('/register', authCtrl.localRegister);//http://localhost:4000/account/auth/register
+
+module.exports = auth;
