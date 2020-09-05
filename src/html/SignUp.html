@@ -11,47 +11,51 @@
     <div class="contain">
         <img src="../images/TMI-logo.png" alt="TMI-logo.black" width="222" height="120">
         <form method="POST" action="#">
-            <div class="IDblank">
-                <h3 id="id">아이디</h3>
-                <input type="id" id="signupID" name="signup.id">
+            <div id="Essential">
+                <div class="IDblank">
+                    <h3 id="id">아이디</h3>
+                    <input type="id" id="signupID" name="signup.id">
+                </div>
+                <div class="PASSWORDblank">
+                    <h3>비밀번호</h3>
+                    <input type="password" id="signupPASSWORD" name="signup.password">
+                    <h3>비밀번호 재확인</h3>
+                    <input type="password" id="againPASSWORD" name="again.password">
+                </div>
             </div>
-            <div class="PASSWORDblank">
-                <h3>비밀번호</h3>
-                <input type="password" id="signupPASSWORD" name="signup.password">
-                <h3>비밀번호 재확인</h3>
-                <input type="password" id="againPASSWORD" name="again.password">
-            </div>
-            <div class="NAMEblank">
-                <h3>이름</h3>
-                <input type="name" id="signupNAME" name="signup.name">
-            </div>
-            <div class="BIRTHblank">
-                <h3>생년월일</h3>
-                <input type="YEAR" id="birthYEAR" name="signup.year" placeholder="년 (4자)">
-                <select name="MONTH" id="birthMONTH">
-                    <option>월</option>
-                    <option>1월</option>
-                    <option>2월</option>
-                    <option>3월</option>
-                    <option>4월</option>
-                    <option>5월</option>
-                    <option>6월</option>
-                    <option>7월</option>
-                    <option>8월</option>
-                    <option>9월</option>
-                    <option>10월</option>
-                    <option>11월</option>
-                    <option>12월</option>
-                </select>
-                <input type="DAY" id="birthDAY" name="signup.day" placeholder="일">
-            </div>
-            <div class="EMAILblank">
-                <h3>이메일</h3>
-                <input type="email" id="signupEMAIL" name="signup.email">
-            </div>
-            <div class="AGENCY">
-                <h3>소속기관</h3>
-                <input type="agency" id="signupAGENCY" name="signup.agency">
+            <div id="Choice">
+                <div class="NAMEblank">
+                    <h3>이름</h3>
+                    <input type="name" id="signupNAME" name="signup.name">
+                </div>
+                <div class="BIRTHblank">
+                    <h3>생년월일</h3>
+                    <input type="YEAR" id="birthYEAR" name="signup.year" placeholder="년 (4자)">
+                    <select name="MONTH" id="birthMONTH">
+                        <option>월</option>
+                        <option>1월</option>
+                        <option>2월</option>
+                        <option>3월</option>
+                        <option>4월</option>
+                        <option>5월</option>
+                        <option>6월</option>
+                        <option>7월</option>
+                        <option>8월</option>
+                        <option>9월</option>
+                        <option>10월</option>
+                        <option>11월</option>
+                        <option>12월</option>
+                    </select>
+                    <input type="DAY" id="birthDAY" name="signup.day" placeholder="일">
+                </div>
+                <div class="EMAILblank">
+                    <h3>이메일</h3>
+                    <input type="email" id="signupEMAIL" name="signup.email">
+                </div>
+                <div class="AGENCY">
+                    <h3>소속기관</h3>
+                    <input type="agency" id="signupAGENCY" name="signup.agency">
+                </div>
             </div>
             <input type="submit" id="SIGNUPbutton" title="회원가입" value="회원가입">
         </form>
