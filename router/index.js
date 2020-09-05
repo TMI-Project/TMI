@@ -28,10 +28,11 @@ mongoose.connect(process.env.MONGO_URI, {//DB연결
 });
 
 
-// app.engine('html', require('ejs').renderFile);
-// app.set('view engine', 'html');
+app.engine('html', require('ejs').renderFile);
+app.set('public engine', 'html');
 
 app.use(express.static('public'));
+
 app.use(function (req, res, next){
     console.log('Time : ', Date.now());
     next();
