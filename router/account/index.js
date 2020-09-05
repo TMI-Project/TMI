@@ -1,14 +1,18 @@
 const express = require("express");
 
-const auth = express.Router();
+const account = express.Router();
 
 
 const authCtrl = require('./auth.controller');
 
 
-auth.get('/register', async function(req, res){
+account.get("/login", async function(req, res){
+    res.render("login.html");
+});
+
+account.get('/register', async function(req, res){
     res.render("SignUp.html");
 });
-auth.post('/register', authCtrl.localRegister);//http://localhost:4000/account/auth/register
+account.post('/register', authCtrl.localRegister);//http://localhost:4000/account/auth/register
 
-module.exports = auth;
+module.exports = account;
