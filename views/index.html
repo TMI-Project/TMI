@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMI-base</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="import" href="base.html">
+    <title>TMI</title>
 </head>
+
 <body>
     <header>
         <div class="headerback">
@@ -29,14 +33,175 @@
                 <a href="a-job-offer.html" class="fourth-nav">구인구직</a>
             </nav>
             <div>
-                <a href="login.html">
+                <a href="account/login">
                     <img class="lock-1" src="../images/lock.png" alt="lock" width="30" height="30">
                     <p class="login">Login</p>
                 </a>
             </div>
         </div>
     </header>
-    
+
+    <!-- 슬라이드 -->
+    <main>
+        <article>
+            <img class="mySlides" src="../images/Banner.png" alt="slides1" width="1440" height="508">
+            <img class="mySlides" src="../images/echo.png" alt="slides2">
+            <img class="mySlides" src="../images/kisa.png" alt="slides3">
+            <div class="section">
+                <span class="left padding-left" onclick="plusDivs(-1)">&#10094;</span>
+                <span class="right padding-right" onclick="plusDivs(1)">&#10095;</span>
+                <span class="badge demo border" onclick="currentDiv(1)"></span>
+                <span class="badge demo border" onclick="currentDiv(2)"></span>
+                <span class="badge demo border" onclick="currentDiv(3)"></span>
+              </div>
+        </article>
+    </main>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            if (n > x.length-1) {slideIndex = 1};    
+            x[slideIndex-1].style.display = "block";
+            setTimeout(showDivs, 5000, slideIndex++)
+        }
+    </script>
+
+    <section class="category">
+        <li>
+            <a href="search">
+                <ul class="category1">
+                    <img height="100" height="100" class="category-img" src="../images/icon/all.png" alt="category">
+                    <h3 class="category-font">전체 공모전</h3>
+                </ul>
+            </a>
+            <a href="#">
+                <ul class="category2">
+                    <img height="100" height="100" class="category-img" src="../images/icon/design.png" alt="category">
+                    <h3 class="category-font">디자인</h3>
+                </ul>
+            </a>
+            <a href="#">
+                <ul class="category3">
+                    <img height="100" height="100" class="category-img" src="../images/icon/ad.png" alt="category">
+                    <h3 class="category-font">광고/마케팅</h3>
+                </ul>
+            </a>
+            <a href="#">
+                <ul class="category4">
+                    <img height="100" height="100" class="category-img" src="../images/icon/game.png" alt="category">
+                    <h3 class="category-font">게임</h3>
+                </ul>
+            </a>
+            <a href="#">
+                <ul class="category5">
+                    <img height="100" height="100" class="category-img" src="../images/icon/idea.png" alt="category">
+                    <h3 class="category-font">기획/아이디어</h3>
+                </ul>
+            </a>
+            <a href="#">
+                <ul class="category6">
+                    <img height="100" height="100" class="category-img" src="../images/icon/book.png" alt="category">
+                    <h3 class="category-font">문학/수기</h3>
+                </ul>
+            </a>
+            <a href="#">
+                <ul class="category7">
+                    <img height="100" height="100" class="category-img" src="../images/icon/pencil.png" alt="category">
+                    <h3 class="category-font">네이밍/슬로건</h3>
+                </ul>
+            </a>
+            <a href="#">
+                <ul class="category8">
+                    <img height="100" height="100" class="category-img" src="../images/icon/Startups.png" alt="category">
+                    <h3 class="category-font">취업/창업</h3>
+                </ul>
+            </a>
+            <a href="#">
+                <ul class="category9">
+                    <img height="100" height="100" class="category-img" src="../images/icon/software.png" alt="category">
+                    <h3 class="category-font">소프트웨어</h3>
+                </ul>
+            </a>
+            <a href="#">
+                <ul class="category10">
+                    <img height="100" height="100" class="category-img" src="../images/icon/more.png" alt="category">
+                    <h3 class="category-font">기타</h3>
+                </ul>
+            </a>
+        </li>
+    </section>
+    <section class="contest">
+        <div class="point">
+            <p class="point-font">높은 기대감</p>
+        </div>
+        <hr class="contest-hr">
+        <a href="#">
+            <article class="contest1">
+                <img height="200" width="312" src="../images/cotest.png" alt="contest">
+                <h3 class="contest-font">대회설명</h3>
+            </article>
+        </a>
+        <a href="#">
+            <article class="contest2">
+                <img height="200" width="312" src="../images/cotest.png" alt="contest">
+                <h3 class="contest-font">대회설명</h3>
+            </article>
+        </a>
+        <a href="#">
+            <article class="contest3">
+                <img height="200" width="312" src="../images/cotest.png" alt="contest">
+                <h3 class="contest-font">대회설명</h3>
+            </article>
+        </a>
+        <a href="#">
+            <article class="contest4">
+                <img height="200" width="312" src="../images/cotest.png" alt="contest">
+                <h3 class="contest-font">대회설명</h3>
+            </article>
+        </a>
+    </section>
+    <section class="poster">
+        <div class="point">
+            <p class="point-font">최근 공모전</p>
+        </div>
+        <hr class="contest-hr">
+        <a href="#">
+            <article class="poster-img1">
+                <img src="../images/poster.png" alt="poster">
+            </article>
+        </a>
+        <a href="#">
+            <article class="poster-img2">
+                <img src="../images/poster.png" alt="poster">
+            </article>
+        </a>
+        <a href="#">
+            <article class="poster-img3">
+                <img src="../images/poster.png" alt="poster">
+            </article>
+        </a>
+        <a href="#">
+            <article class="poster-img4">
+                <img src="../images/poster.png" alt="poster">
+            </article>
+        </a>
+    </section>
+
     <footer class="white">
         <div class="TMI-footer">
             <svg class="TMI-logo2" width="165" height="82.91" viewBox="0 0 129 70" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -84,4 +249,5 @@
         <p class="copyright">© Copyright,  2020</p>
     </footer>
 </body>
+
 </html>
