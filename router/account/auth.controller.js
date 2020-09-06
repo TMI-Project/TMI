@@ -1,37 +1,38 @@
 const Joi = require('joi');
 const Account = require('../../models/account');
 
-exports.localRegister = async (ctx) => {
+exports.localRegister = async (req, res) => {
     const schema = Joi.object().keys({
-        username: Joi.string().required(),
+        Name: Joi.string().required(),
         email: Joi.string().email().required(),
         ID: Joi.string().required(),
         password: Joi.string().required().min(6)
     });
 
-    const result = schema.validate(ctx.request.body);
+    const result = schema.validate(req.body);
 
     if(result.error){
-        ctx.status = 400;
+        res.status = 400;
         return;
     }
     //TODO: 아이디 / 이메일 중복처리 구현
 
     let account = null;
     try {
-        account = await Account.localRegister(ctx.request.body);
+        account = await Account.localRegister(req.body);
     } catch(e) {
-        ctx.throw(500, e);
+        res.status(500).json({"에러" : "전자", error: e.toString() });
     }
+
 
     let token = null;
     try {
         token = await account.generateToken();
+        res.cookie('access_token', token, {httpOnly: true, maxAge: 1000 * 60 * 60 * 24 * 7});
     } catch(e) {
-        ctx.throw(500, e);
+        res.status(500).json({"에러" : "후자" ,error: e.toString()});
     }
-    ctx.cookies.set('access_token', token, {httpOnly: true, maxAge: 1000 * 60 * 60 * 24 * 7});
-    ctx.body = "회원가입 완료";
+     res.send("회원가입 완료");
 
 
 }
