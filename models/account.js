@@ -19,30 +19,26 @@ const Account = new Schema({
     gender: String,
     Byear: Number, Bmonth: Number, Bday: Number,
     agency: String,
-    career: String,
-    specializedField: String,
-    area: String,
-    job: String,
-    interestingField: String,
+    // career: String,
+    // specializedField: String,
+    // area: String,
+    // job: String,
+    // interestingField: String,
     createAt: { type : Date, default : Date.now }
 
 });
 
-Account.statics.localRegister = function( { username, email, ID, password
-    ,nickname = "None", gender = "None", age = 20, career = "None", specializedField = "None", area = "None", job = "None", interestingField = "None"}){
+Account.statics.localRegister = function( { ID, password, Name, email
+    ,nickname = "None", gender = "None", Byear = 0, Bmonth = 0, Bday = 0, Agency = "None"}){
     const account = new this({
-        Name : username,
+        Name : Name,
         email,
-        ID,
+        ID : ID,
         password : hash(password),
         nickname,
         gender,
-        age,
-        career,
-        specializedField,
-        area,
-        job,
-        interestingField
+        Byear: Byear, Bmonth: Bmonth, Bday: Bday,
+        Agency
     });
 
     return account.save();
@@ -51,11 +47,9 @@ Account.statics.localRegister = function( { username, email, ID, password
 Account.methods.generateToken = function(){
     const payload = {
         _id:this._id,
-        age: this.age,
-        specializedField : this.specializedField,
-        area : this. area,
-        job : this.job,
-        interestingField : this.interestingField
+        Byear : this.Byear,
+        gender : this.gender,
+        Agency : this.Agency
     };
 
     return generateToken(payload, 'account');
