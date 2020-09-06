@@ -26,5 +26,23 @@ POST /account/register
 SUCCESS {"code": 200, message: "Succes"}
 ```
 ```
-FAIL {"code": 500, message: error message}
+FAIL {"code": 400, message: "이메일 양식을 맞춰주시고, 비밀번호는 최소 6글자입니다."}
+FAIL {"code": 500, message: "error mesage"}
+FAIL {"code": 500, message: "Cookie seeting error"}
+```
+
+### 로그인
+```
+POST /account/login
+```
+- Request
+```
+{
+    ID: String,
+    password: String
+}
+```
+- Response
+```
+어... 어떻게 반응해줘야되지
 ```
