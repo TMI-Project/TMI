@@ -12,7 +12,7 @@ exports.localRegister = async (req, res) => {
     const result = schema.validate(req.body);
 
     if(result.error){
-        res.status = 400;
+        res.status(400).json({ error: "이메일 양식을 맞춰주시고, 비밀번호는 최소 6글자입니다."})
         return;
     }
     //TODO: 아이디 / 이메일 중복처리 구현
@@ -21,7 +21,7 @@ exports.localRegister = async (req, res) => {
     try {
         account = await Account.localRegister(req.body);
     } catch(e) {
-        res.status(500).json({"에러" : "전자", error: e.toString() });
+        res.status(500).json({ error: e.toString() });
     }
 
 
@@ -30,7 +30,7 @@ exports.localRegister = async (req, res) => {
         token = await account.generateToken();
         res.cookie('access_token', token, {httpOnly: true, maxAge: 1000 * 60 * 60 * 24 * 7});
     } catch(e) {
-        res.status(500).json({"에러" : "후자" ,error: e.toString()});
+        res.status(500).json({error: "Cookie seeting error"});
     }
      res.send("회원가입 완료");
 
