@@ -2,11 +2,13 @@ const Joi = require('joi');
 const Account = require('../../models/account');
 
 exports.localRegister = async (req, res) => {
+    console.log(req.body);
     const schema = Joi.object().keys({
         Name: Joi.string().required(),
         email: Joi.string().email().required(),
         ID: Joi.string().required(),
-        password: Joi.string().required().min(6)
+        password: Joi.string().required().min(6),
+        // password: Rpassword
     });
 
     const result = schema.validate(req.body);

@@ -24,14 +24,15 @@ mongoose.connect(process.env.MONGO_URI, {//DB연결
 ).catch(e => {
     console.error(e);
 });
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 
 app.use(express.static('public'));
-app.use(express.json());
+
 
 
 app.use(function (req, res, next){
