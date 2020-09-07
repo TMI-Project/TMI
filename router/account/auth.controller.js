@@ -7,14 +7,15 @@ exports.localRegister = async (req, res) => {
         Name: Joi.string().required(),
         email: Joi.string().email().required(),
         ID: Joi.string().required(),
-        password: Joi.string().required().min(6),
+        password: Joi.string().min(6).required(),
         // password: Rpassword
-    });
+    }).unknown();
 
     const result = schema.validate(req.body);
 
     if(result.error){
         res.status(400).json({ error: "이메일 양식을 맞춰주시고, 비밀번호는 최소 6글자입니다."})
+        console.log(result.error);
         return;
     }
     //TODO: 아이디 / 이메일 중복처리 구현
