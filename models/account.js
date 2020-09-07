@@ -47,6 +47,7 @@ Account.statics.localRegister = function( { ID, password, Name, email
 Account.methods.generateToken = function(){
     const payload = {
         _id:this._id,
+        name: this.Name,
         Byear : this.Byear,
         gender : this.gender,
         Agency : this.Agency
