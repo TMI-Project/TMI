@@ -74,7 +74,8 @@
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";  
             }
-            if (n > x.length-1) {slideIndex = 1};    
+            if (n > x.length-1) {slideIndex = 1}; 
+            if (n < 1) {slideIndex = 3}; 
             x[slideIndex-1].style.display = "block";
             setTimeout(showDivs, 5000, slideIndex++)
         }
