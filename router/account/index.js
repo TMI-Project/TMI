@@ -13,6 +13,6 @@ account.get("/login", async function(req, res){
 account.get('/register', async function(req, res){
     res.render("SignUp.html");
 });
-account.post('/register', authCtrl.localRegister);//http://localhost:4000/account/auth/register
+account.post('/register/local', authCtrl.localRegister);//http://localhost:4000/account/auth/register
 
 module.exports = account;
