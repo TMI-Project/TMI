@@ -8,7 +8,6 @@ exports.localRegister = async (req, res) => {
         email: Joi.string().email().required(),
         ID: Joi.string().required(),
         password: Joi.string().min(6).required(),
-        // password: Rpassword
     }).unknown();
 
     const result = schema.validate(req.body);
@@ -17,6 +16,9 @@ exports.localRegister = async (req, res) => {
         res.status(400).json({ error: "이메일 양식을 맞춰주시고, 비밀번호는 최소 6글자입니다."})
         console.log(result.error);
         return;
+    }else if(req.body.password === req.body.Rpassword){
+        res.status(400).json({error: "비밀번호와 재확인 비밀번호가 동일하지않습니다."})
+        res.redirect("/account/register");
     }
     //TODO: 아이디 / 이메일 중복처리 구현
 
@@ -35,7 +37,7 @@ exports.localRegister = async (req, res) => {
     } catch(e) {
         res.status(500).json({error: "Cookie seeting error"});
     }
-    
+
      res.redirect('/');
 
 
