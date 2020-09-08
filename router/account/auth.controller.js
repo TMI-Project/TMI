@@ -1,5 +1,6 @@
 const Joi = require('joi');
 const Account = require('../../models/account');
+const { createIndexes } = require('../../models/account');
 
 exports.localRegister = async (req, res) => {
     console.log(req.body);
@@ -20,8 +21,19 @@ exports.localRegister = async (req, res) => {
         res.status(400).json({error: "비밀번호와 재확인 비밀번호가 동일하지않습니다."})
         res.redirect("/account/register");
     }
-    //TODO: 아이디 / 이메일 중복처리 구현
 
+    let existing = null;
+    try {
+        existing = await Account.findByEmailOrUsername(req.body);
+    }catch(e){
+        res.status(500).json({ error : e });
+        return;
+    }
+    if(existing){
+        res.status(409).json({key : existing.email === req.body.email ? 'email' : 'ID'});
+        return;
+    }
+    
     let account = null;
     try {
         account = await Account.localRegister(req.body);
