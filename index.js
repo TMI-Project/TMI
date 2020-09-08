@@ -5,6 +5,7 @@ const app = express();
 
 const mongoose = require('mongoose');
 const routes = require('./router/index');
+const { function } = require('joi');
 
 
 
@@ -53,5 +54,3 @@ app.listen(port, () => {
     console.log('it is listening to port 4000');
     console.log(`open http://localhost:${port}`);
 });
-
-
