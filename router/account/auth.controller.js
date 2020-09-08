@@ -35,7 +35,9 @@ exports.localRegister = async (req, res) => {
     } catch(e) {
         res.status(500).json({error: "Cookie seeting error"});
     }
-     res.send("회원가입 완료");
+    
+     res.redirect('/');
+
 
 
 }
