@@ -27,6 +27,14 @@ const Account = new Schema({
     createAt: { type : Date, default : Date.now }
 
 });
+Account.statics.findByEmailOrID = function({ID, Email}){
+    return this.findOne({
+        $or: [
+            { 'ID' : ID},
+            { email }
+        ]
+    }).exec();
+};
 
 Account.statics.localRegister = function( { ID, password, Name, email
     ,nickname = "None", gender = "None", Byear = 0, Bmonth = 0, Bday = 0, Agency = "None"}){
