@@ -7,7 +7,7 @@ router.use("/search", require("./search"));
 router.use("/chatting", require("./chatting"));
 
 router.get('/', async function (req, res){
-    res.render('index.html');
+    res.render('index.ejs');
 });
 
 module.exports = router;
