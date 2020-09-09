@@ -24,31 +24,29 @@ mongoose.connect(process.env.MONGO_URI, {//DB연결
 ).catch(e => {
     console.error(e);
 });
+
+//express 기본 세팅
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
-
+//정적파일들의 경로를 public으로 향하게
 app.use(express.static('public'));
 
 
-
+// 로그 남기기
 app.use(function (req, res, next){
     console.log('Time : ', Date.now());
     next();
 });
 
+//라우팅
 app.use("/", routes);
 
 
-app.get('/register', async function(req, res){
-    res.send("<h1>Hello World<h1>");
-});
-
-
-
+//포트 열고 링크 남기기
 app.listen(port, () => {
     console.log('it is listening to port 4000');
     console.log(`open http://localhost:${port}`);
