@@ -42,6 +42,7 @@
     background-color: #0B2086;
     color: white;
     font-size: 17px;
+    cursor: pointer;
 }
 #membershipbutton{
     width: 720px;
@@ -49,4 +50,5 @@
     background-color: white;
     color: #0B2086;
     font-size: 17px;
+    cursor: pointer;
 }

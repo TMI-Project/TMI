@@ -92,6 +92,7 @@
 	color: #0b2086;
 	border: solid #0b2086 1px;
 	font-size: 24px;
+	cursor: pointer;
 }
 #Essential{
 	display: block;
