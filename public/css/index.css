@@ -212,61 +212,49 @@ li{list-style: none;}
 
 .contest-font{
     font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
 }
 
 .poster{
     position: absolute;
-    width: 1440px;
-    height: 431.4px;
-    left: 240px;
-    top: 1402px;
+    width: 1320px;
+    height: 504px;
+    left: 300px;
+    top: 1260px;
 }
 
 .poster-img1{
     position: absolute;
-    width: 312px;
-    height: 431.4px;
-    left: 70px;
-    top: 130px;
-    
-    border: 1px solid #000000;
-    box-sizing: border-box;
+    width: 300px;
+    height: 414px;
+    left: 10px;
+    top: 100px;
 }
 
 .poster-img2{
     position: absolute;
-    width: 312px;
-    height: 431.4px;
-    left: 400px;
-    top: 130px;
-    
-    border: 1px solid #000000;
-    box-sizing: border-box;
+    width: 300px;
+    height: 414px;
+    left: 340px;
+    top: 100px;
 }
 
 .poster-img3{
     position: absolute;
-    width: 312px;
-    height: 431.4px;
-    left: 730px;
-    top: 130px;
-    
-    border: 1px solid #000000;
-    box-sizing: border-box;
+    width: 300px;
+    height: 414px;
+    left: 670px;
+    top: 100px;
 }
 
 .poster-img4{
     position: absolute;
-    width: 312px;
-    height: 431.4px;
-    left: 1060px;
-    top: 130px;
-    
-    border: 1px solid #000000;
-    box-sizing: border-box;
+    width: 300px;
+    height: 414px;
+    left: 1000px;
+    top: 100px;
 }
