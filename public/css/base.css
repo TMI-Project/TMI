@@ -23,7 +23,7 @@ header * a, footer * a{
 header {
     position: absolute;
     width: 1900px;
-    height: 108px;
+    height: 94px;
     left: 0px;
     top: 0px;
 
@@ -53,7 +53,7 @@ header {
     position: absolute;
     left: 18%;
     right: 78.18%;
-    top: 16%;
+    top: 10%;
     bottom: 26.85%;
 }
 
@@ -61,7 +61,7 @@ header nav {
     position: absolute;
     left: 27.18%;
     right: 31.98%;
-    top: 31%;
+    top: 25%;
     bottom: 42.95%;
 }
 
@@ -129,7 +129,7 @@ header nav {
     position: absolute;
     left: 81.82%;
     right: 16.61%;
-    top: 36%;
+    top: 30%;
     bottom: 40.27%;
 }
 
@@ -137,7 +137,7 @@ header nav {
     position: absolute;
     left: 83.65%;
     right: 12.5%;
-    top: 10%;
+    top: 0;
     bottom: 45.26%;
 
     font-family: Roboto;
@@ -151,9 +151,10 @@ header nav {
 footer{
     position: absolute;
     width: 1900px;
-    height: 380px;
+    height: 245px;
     left: 0px;
-    top: 2012px;    
+    top: 2012px;   
+    text-align: left; 
     
     background: #253DAC;
 }
@@ -162,7 +163,7 @@ footer{
     position: absolute;
     left: 3%;
     right: 78.91%;
-    top: 8%;
+    top: 5%;
     bottom: 64.47%;
 }
 
@@ -178,9 +179,9 @@ footer{
     position: absolute;
     left: 0%;
     right: 17%;
-    top: 70%;
+    top: 90%;
     bottom: 0%;
-    font-size: 17px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -188,24 +189,24 @@ footer nav{
     position: absolute;
     left: 28%;
     right: 60%;
-    top: 18%;
+    top: 10%;
     bottom: 46.84%;
 }
 
-footer nav ul{margin: 12px; font-size: 20px;}
+footer nav ul{margin: 10px; font-size: 18px;}
 
 address{
     position: absolute;
     left: 52.08%;
     right: 41.56%;
-    top: 16.84%;
+    top: 10%;
     bottom: 66.58%;
 
     width: 280px;
 }
 
 address p, address h3{
-    margin: 5px 0 0 0; 
+    margin: 0; 
     font-weight: normal;
     font-style: normal;
     font-size: 18px;
@@ -217,8 +218,8 @@ address div{margin-bottom: 20px;}
     position: absolute;
     left: 75%;
     right: 10%;
-    top: 16.84%;
-    bottom: 76.84%;
+    top: 20%;
+    bottom: 60%;
 }
 
 footer div ul{
@@ -226,7 +227,7 @@ footer div ul{
     font-family: Inter;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
 }
 
@@ -234,8 +235,8 @@ footer div ul{
     position: absolute;
     left: 12.5%;
     right: 12.5%;
-    top: 70.53%;
-    bottom: 29.47%;
+    top: 75%;
+    bottom: 25%;
 
     width: 1440px;
 }
@@ -244,12 +245,12 @@ footer div ul{
     position: absolute;
     left: 12.5%;
     right: 76.04%;
-    top: 80%;
+    top: 75%;
     bottom: 15.79%;
     
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 16px;
 }
