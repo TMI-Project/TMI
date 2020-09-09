@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
 
 .search-wrap {
-    margin-left: 424px;
+    margin-left: 590px;
     margin-top: 179px;
-    height: 75px;
-    width: 1072px;
+    height: 50px;
+    width: 724px;
     position: absolute;
 }
 
 .search-bar{
     border: 2px solid #0F248B;
     border-radius: 1px;
-    height: 71px;
+    height: 50px;
     float: left;
 }
 
@@ -21,12 +21,12 @@
 
 .select-item>select {
     float: left;
-    width: 205px;
-    height: 51px;
-    margin-top: 10px;
+    width: 180px;
+    height: 40px;
+    margin-top: 5px;
     padding-left: 13px;
     border-style: none;
-    font-size: 24px;
+    font-size: 20px;
     color: #0F248B;
     background: url('../images/Vector1.png') no-repeat 95% 50%;
     text-align: center;
@@ -40,8 +40,8 @@
 .select-item>select::-ms-expand { display: none; }
 
 .search-bar>input {
-    width: 614px;
-    height: 71px;
+    width: 400px;
+    height: 50px;
     padding: 0 20px;
     padding-left: 20px;
     font-size: 20px;
@@ -54,10 +54,10 @@
 
 .search-wrap>button{
     position: absolute;
-    width: 186px;
-    height: 75px;
+    width: 100px;
+    height: 54px;
     padding: 0;
-    margin-left: 23px;
+    margin-left: 0px;
     border-style: none;
     font-size: 24px;
     color: #ffffff;
@@ -72,8 +72,8 @@
 }
 
 .section-wrap {
-    width: auto;
-    height: auto;
+    width: 0;
+    height: 0;
     margin: 314px 0 0 0;
     position: absolute;
 }
@@ -81,35 +81,38 @@
 .section-wrap>p {
     width: 300px;
     padding: 0;
-    margin: 10px 0 0 810px;
+    margin: 0.01em 0 0 20em;
     position: relative;
     color: black;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
 }
 
 .Post-wrap {
-    width: 1440px;
+    width: 0;
+    height: 0;
     margin: 95px 0 0 210px;
+    position: absolute;
 }
 
 .Post-space {
-    width: 1490px;
-    height: 300px;
+    width: 1370px;
+    height: 280px;
     padding: 0;
-    margin: -80px 0 0 0;
+    margin: -3em 0 0 3em;
     border-style: solid;
     border-spacing: 25px;
+    position: absolute;
 }
 
 .Post-cell {
-    width: 1440px;
-    height: 250px;
+    width: 1320px;
+    height: 230px;
 }
 
 .Post-item {
-    width: 1440px;
-    height: 250px;
+    width: 1320px;
+    height: 230px;
     margin: 0;
     padding: 0;
     border-style: solid;
@@ -117,8 +120,8 @@
 }
 
 .Post-img {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     margin: 26px 22px;
     padding: 0;
     border-style: solid;
@@ -127,51 +130,51 @@
 }
 
 .Post-img>img {
-    width: 152px;
-    height: 152px;
+    width: 122px;
+    height: 122px;
     margin: 24px;
 }
 
 .Post-Tt {
     width: auto;
     height: auto;
-    margin: 30px 0 0 15%;
+    margin: 2em 0 0 14em;
     padding: 0;
     position: absolute;
 }
 
 .Title {
-    font-size: 40px;
+    font-size: 30px;
     padding: 0;
-    margin: 30px 0 0 0;
+    margin: 2em 0 0 0;
     position: relative;
 }
 
 .Publisher {
     width: auto;
-    font-size: 24px;
+    font-size: 20px;
     padding: 0;
-    margin: 15px 0 0 0;
+    margin: 1.2em 0 0 0;
 }
 
 .date {
     width: auto;
     height: auto;
     padding: 0;
-    margin: 40px 37px 0 0;
-    font-size: 24px;
+    margin: 1.7em 2em 0 0;
+    font-size: 20px;
     text-align: center;
     float: right;
 }
 
 .btn-post {
     float: right;
-    width: 188px;
-    height: 120px;
-    margin: 100px -182px 0 0;
+    width: 143px;
+    height: 103px;
+    margin: 3em -4.5em 0 0;
     padding: 0;
     border-style: none;
-    font-size: 24px;
+    font-size: 32px;
     color: #ffffff;
     background-color: #0F248B;
     outline: none;
@@ -191,8 +194,8 @@
 }
 
 .paging {
-    font-size: 48px;
-    margin: 30px 0;
+    font-size: 36px;
+    margin: 37em 0 0 2em;
 }
 
 .paging>a {
@@ -200,9 +203,9 @@
 }
 
 .paging>.prev {
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
 .paging>.next {
-    margin-left: 40px;
+    margin-left: 30px;
 }
