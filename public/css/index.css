@@ -145,24 +145,24 @@ li{list-style: none;}
 
 .contest{
     position: absolute;
-    width: 1440px;
-    height: 378px;
-    left: 240px;
-    top: 937px;
+    width: 1320px;
+    height: 343px;
+    left: 300px;
+    top: 841px;
 }
 
 .point-font{
     position: absolute;
     width: 219px;
     height: 42px;
-    left: 17px;
-    top: -13px;
+    left: -23px;
+    top: -8px;
     
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 28px;
     text-align: center;
     
     color: #FFFFFF;   
@@ -170,44 +170,44 @@ li{list-style: none;}
 
 .point{
     position: absolute;
-    width: 259px;
-    height: 82px;
+    width: 171px;
+    height: 60px;
 
     background: #0F248B;
 }
 
-.contest-hr{margin-top: 80px; border: 3px solid #0F248B;}
+.contest-hr{margin-top: 55px; border: 3px solid #0F248B;}
 
 .contest1{
     position: absolute;
-    width: 312px;
-    height: 265px;
-    left: 70px;
-    top: 130px;
+    width: 300px;
+    height: 192px;
+    left: 10px;
+    top: 100px;
 }
 
 .contest2{
     position: absolute;
-width: 312px;
-height: 265px;
-left: 400px;
-    top: 130px;
+    width: 300px;
+    height: 192px;
+    left: 340px;
+    top: 100px;
 }
 
 .contest3{
     position: absolute;
-width: 312px;
-height: 265px;
-left: 730px;
-    top: 130px;
+    width: 300px;
+    height: 192px;
+    left: 670px;
+    top: 100px;
 }
 
 .contest4{
     position: absolute;
-width: 312px;
-height: 265px;
-left: 1060px;
-    top: 130px;
+    width: 300px;
+    height: 192px;
+    left: 1000px;
+    top: 100px;
 }
 
 .contest-font{
