@@ -27,11 +27,11 @@ const Account = new Schema({
     createAt: { type : Date, default : Date.now }
 
 });
-Account.statics.findByEmailOrID = function({ID, Email}){
+Account.statics.findByEmailOrID = function({ID, email}){
     return this.findOne({
         $or: [
             { 'ID' : ID},
-            { email }
+            { 'email' : email }
         ]
     }).exec();
 };
