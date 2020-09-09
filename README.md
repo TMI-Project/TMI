@@ -17,6 +17,19 @@
 ```
 ##### [깃 다루는 방법](./GitCommand.md)
 
+## 실행 방법
+```
+    package.json
+    package.lock.json
+    yarn.lock
+    yarn-error.log
+    .env
+    node_module
+```
+    1. 해당 파일들을 루트디렉토리에 올린다.
+    2. npm install yarn
+    3. yarn add nodemon
+    4. yarn start, yarn start:dev
 
 ## INDEX
 ### 피드, 캘린더, 커뮤니티
