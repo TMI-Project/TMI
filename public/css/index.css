@@ -15,10 +15,10 @@ a {
 
 main article{
     position: absolute;
-    width: 1440px;
-    height: 508px;
-    left: 240px;
-    top: 108px;
+    width: 1320px;
+    height: 465px;
+    left: 300px;
+    top: 94px;
 
     background-color: #253DAC;
 }
@@ -45,101 +45,101 @@ li{list-style: none;}
 
 .category{
     position: absolute;
-    width: 1409px;
-    height: 143px;
-    left: 220px;
-    top: 660px;
+    width: 1315px;
+    height: 130px;
+    left: 305px;
+    top: 635px;
 }
 
 .category-img{padding-left: 40px;}
 
 .category1{
     position: absolute;
-    width: 170px;
-    height: 100px;
-    left: 0px; 
+    width: 180px;
+    height: 94px;
+    left: -20px; 
     padding: 0%;  
 }
 
 .category2{
     position: absolute;
     width: 150px;
-    height: 100px;
-    left: 150px;
+    height: 94px;
+    left: 125px; 
     padding: 0%; 
 }
 
 .category3{
     position: absolute;
-    width: 170px;
-    height: 100px;
-    left: 290px;
-    padding: 0%;    
+    width: 180px;
+    height: 94px;
+    left: 245px; 
+    padding: 0%;   
 }
 
 .category4{
     position: absolute;
-    width: 150px;
-    height: 100px;
-    left: 440px;
-    padding: 0%;   
+    width: 130px;
+    height: 94px;
+    left: 395px; 
+    padding: 0%;    
 }
 
 .category5{
     position: absolute;
-    width: 200px;
-    height: 100px;
-    left: 560px; 
+    width: 220px;
+    height: 94px;
+    left: 480px; 
     padding: 0%;   
 }
 
 .category6{
     position: absolute;
-    width: 150px;
-    height: 100px;
-    left: 730px;
+    width: 180px;
+    height: 94px;
+    left: 635px; 
     padding: 0%; 
 }
 
 .category7{
     position: absolute;
-    width: 200px;
-    height: 100px;
-    left: 860px;
-    padding: 0%; 
+    width: 220px;
+    height: 94px;
+    left: 740px; 
+    padding: 0%;  
 }
 
 .category8{
     position: absolute;
-    width: 150px;
-    height: 100px;
-    left: 1030px; 
+    width: 180px;
+    height: 94px;
+    left: 880px; 
     padding: 0%;   
 }
 
 .category9{
     position: absolute;
-    width: 150px;
-    height: 100px;
-    left: 1170px; 
+    width: 180px;
+    height: 94px;
+    left: 995px; 
     padding: 0%; 
 }
 
 .category10{
     position: absolute;
-    width: 150px;
-    height: 100px;
-    left: 1300px; 
-    padding: 0%; 
+    width: 180px;
+    height: 94px;
+    left: 1115px; 
+    padding: 0%;  
 }
 
 .category-font{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 28px;
-    padding-left: 35px;
+    padding-left: 45px;
     margin-top: 10px;
 }
 
