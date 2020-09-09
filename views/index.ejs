@@ -14,39 +14,23 @@
     <!-- 슬라이드 -->
     <main>
         <article>
-            <img class="mySlides" src="../images/Banner.png" alt="slides1" width="1440" height="508">
-            <img class="mySlides" src="../images/echo.png" alt="slides2">
-            <img class="mySlides" src="../images/kisa.png" alt="slides3">
-            <div class="section">
-                <span class="left padding-left" onclick="plusDivs(-1)">&#10094;</span>
-                <span class="right padding-right" onclick="plusDivs(1)">&#10095;</span>
-                <span class="badge demo border" onclick="currentDiv(1)"></span>
-                <span class="badge demo border" onclick="currentDiv(2)"></span>
-                <span class="badge demo border" onclick="currentDiv(3)"></span>
-              </div>
+            <img class="mySlides" src="../images/Banner.png" alt="slides1" width="1320" height="465">
+            <img class="mySlides" src="../images/echo.png" alt="slides2" width="1320" height="465">
+            <img class="mySlides" src="../images/kisa.png" alt="slides3" width="1320" height="465">
         </article>
     </main>
 
     <script>
         var slideIndex = 1;
-        showDivs(slideIndex);
+        showDivs();
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
+        function showDivs(){
             var i;
             var x = document.getElementsByClassName("mySlides");
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";  
             }
-            if (n > x.length-1) {slideIndex = 1}; 
-            if (n < 1) {slideIndex = 3}; 
+            if (slideIndex > x.length-1) {slideIndex = 1}; 
             x[slideIndex-1].style.display = "block";
             setTimeout(showDivs, 5000, slideIndex++)
         }

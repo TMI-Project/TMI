@@ -34,11 +34,6 @@ main article{
 .border {border:1px solid}
 .padding-right{padding-right: 16px; float: right;}
 .padding-left{padding-left: 16px; float: left;}
-.section{
-    position: relative;
-    bottom: 40px;
-    color: #ffffffb9;
-}
 
 
 li{list-style: none;}
