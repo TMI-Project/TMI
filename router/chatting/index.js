@@ -1,9 +1,7 @@
-const express = require("express");
+const express = require('express');
 
 const chatting = express.Router();
 
-chatting.get('/', async function(req, res){
-    res.render('chatting.ejs');
-})
+chatting.get('/', (_, res) => res.render('chatting.ejs'));
 
 module.exports = chatting;
