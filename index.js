@@ -5,7 +5,8 @@ const app = express();
 
 const mongoose = require('mongoose');
 const routes = require('./router/index');
-
+const { jwtMiddleware } = require('./lib/token');
+const cookieParser = require('cookie-parser');
 
 
 
@@ -27,6 +28,8 @@ mongoose.connect(process.env.MONGO_URI, {//DB연결
 
 //express 기본 세팅
 app.use(express.json());
+app.use(cookieParser());
+app.use(jwtMiddleware);
 app.use(express.urlencoded({ extended: true }));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
