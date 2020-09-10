@@ -1,8 +1,12 @@
 const mongoose = require('mongoose');
 const crypto = require('crypto');
-const { generateToken } = require('../lib/token');
+const {
+    generateToken
+} = require('../lib/token');
 
-const { Schema } = mongoose;
+const {
+    Schema
+} = mongoose;
 
 function hash(password) {
     return crypto
@@ -34,11 +38,20 @@ const Account = new Schema({
     },
 });
 
-Account.statics.findByEmailOrID = ({ ID, email }) => {
-    return this.findOne({ $or: [{ ID }, { email }] });
-};
+Account.statics.findByEmailOrID = function ({
+    ID,
+    email
+}) {
+    return this.findOne({
+        $or: [{
+            ID
+        }, {
+            email
+        }]
+    })
+}
 
-Account.statics.localRegister = ({
+Account.statics.localRegister = function ({
     ID,
     password,
     Name,
@@ -49,7 +62,7 @@ Account.statics.localRegister = ({
     Bmonth = 0,
     Bday = 0,
     Agency = 'None',
-}) => {
+}) {
     const account = new this({
         Name: Name,
         email,
@@ -66,10 +79,22 @@ Account.statics.localRegister = ({
     return account.save();
 };
 
-Account.methods.generateToken = () => {
-    const { _id, Name, Byear, gender, Agency } = this;
-    const payload = { _id, Name, Byear, gender, Agency };
-    return generateToken(payload, 'account');
+Account.methods.generateToken = function () {
+    const {
+        _id,
+        Name,
+        Byear,
+        gender,
+        Agency
+    } = this;
+
+    return generateToken({
+        _id,
+        Name,
+        Byear,
+        gender,
+        Agency
+    }, 'account');
 };
 
 module.exports = mongoose.model('Account', Account);
