@@ -27,6 +27,7 @@ SUCCESS {"code": 200, message: "Succes"}
 ```
 ```
 FAIL {"code": 400, message: "이메일 양식을 맞춰주시고, 비밀번호는 최소 6글자입니다."}
+FAIL {"code": 400, message: "비밀번호와 재확인 비밀번호가 동일하지않습니다."}
 FAIL {"code": 500, message: "error mesage"}
 FAIL {"code": 500, message: "Cookie seeting error"}
 ```
