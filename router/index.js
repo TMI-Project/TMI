@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     const token = Token.decodedToken(accessToken);
     console.log(token);
 
-    res.render('index.ejs' /* , {name : 'userName'} */);
+    res.render('index' /* , {name : 'userName'} */ );
 });
 
 module.exports = router;
