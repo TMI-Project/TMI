@@ -11,6 +11,7 @@ router.get('/', async (req, res) => {
 
     const token = Token.decodedToken(accessToken);
     console.log(token);
+    console.log(req);
 
     res.render('index' /* , {name : 'userName'} */ );
 });
