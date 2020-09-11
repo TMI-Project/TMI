@@ -1,127 +1,128 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/search.css" />
+        <link rel="stylesheet" href="/css/base.css" />
+        <title>TMI</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/search.css">
-    <link rel="stylesheet" href="/css/base.css">
-    <title>TMI</title>
-</head>
+    <body>
+        <%- include('partials/header') %>
 
-<body>
-    <%- include('partials/header') %>
-
-    <form name="top_search" class="search-wrap" method="get" action="/Search/SearchResult.html" onsubmit="return false">
-        <div class="search-bar">
-            <div class="select-item">
-                <select name="st"><option value="">통합검색</option><option value="contest_all">전체공모전</option><option value="1">디자인</option><option value="2">광고/마케팅</option><option value="3">게임</option><option value="4">기획/아이디어</option><option value="5">문학/수기</option><option value="6">네이밍/슬로건</option><option value="7">취업/창업</option><option value="8">소프트웨어</option><option value="9">기타</option></select>
-            </div>
-            <input type="text" name="sw" value="" alt="검색어 입력" onkeypress="if(event.keyCode == 13) Search();" placeholder="검색어 입력">
-        </div>                                                                  <!--엔터키 사용시 서치-->
-        
-        <button type="button" onclick="Search()" class="btn-search" alt="검색" title="검색"><div class="shading"></div>검색</button>
-    </form>
-    
-    <section class="section-wrap">
-        <p>전체 공모전</p>
-        <article class="Post-wrap">
-            <table border="0" class="Post-space" name="Post">
-                <tr class="Post-cell">
-                    <td class="Post-item">
-                        <div class="Post-img"><img src="/images/category.png"></div>
-                        <div class="Post-Tt">
-                            <a href="#" class="Title">타닥이를 안아프게 맞는 발명품을 개발하는 공모전</a>
-                            <p class="Publisher">의뢰업체 : <a href="#">ICT</a></p>
-                        </div>
-                        <p class="date">2020-08-28 까지</p>
-                        <button type="button" class="btn-post" onclick="location.href='#'"><div class="shading"></div>TMI</button>
-                    </td>
-                </tr>
-                <tr class="Post-cell">
-                    <td class="Post-item">
-                        <div class="Post-img"><img src="/images/category.png"></div>
-                        <div class="Post-Tt">
-                            <a href="#" class="Title">타닥이를 안아프게 맞는 발명품을 개발하는 공모전</a>
-                            <p class="Publisher">의뢰업체 : <a href="#">ICT</a></p>
-                        </div>
-                        <p class="date">2020-08-28 까지</p>
-                        <button type="button" class="btn-post" onclick="location.href='#'"><div class="shading"></div>TMI</button>
-                    </td>
-                </tr>
-                <tr class="Post-cell">
-                    <td class="Post-item">
-                        <div class="Post-img"><img src="/images/category.png"></div>
-                        <div class="Post-Tt">
-                            <a href="#" class="Title">타닥이를 안아프게 맞는 발명품을 개발하는 공모전</a>
-                            <p class="Publisher">의뢰업체 : <a href="#">ICT</a></p>
-                        </div>
-                        <p class="date">2020-08-28 까지</p>
-                        <button type="button" class="btn-post" onclick="location.href='#'"><div class="shading"></div>TMI</button>
-                    </td>
-                </tr>
-                <tr class="Post-cell">
-                    <td class="Post-item">
-                        <div class="Post-img"><img src="/images/category.png"></div>
-                        <div class="Post-Tt">
-                            <a href="#" class="Title">타닥이를 안아프게 맞는 발명품을 개발하는 공모전</a>
-                            <p class="Publisher">의뢰업체 : <a href="#">ICT</a></p>
-                        </div>
-                        <p class="date">2020-08-28 까지</p>
-                        <button type="button" class="btn-post" onclick="location.href='#'"><div class="shading"></div>TMI</button>
-                    </td>
-                </tr>
-                <tr class="Post-cell">
-                    <td class="Post-item">
-                        <div class="Post-img"><img src="/images/category.png"></div>
-                        <div class="Post-Tt">
-                            <a href="#" class="Title">타닥이를 안아프게 맞는 발명품을 개발하는 공모전</a>
-                            <p class="Publisher">의뢰업체 : <a href="#">ICT</a></p>
-                        </div>
-                        <p class="date">2020-08-28 까지</p>
-                        <button type="button" class="btn-post" onclick="location.href='#'"><div class="shading"></div>TMI</button>
-                    </td>
-                </tr>
-            </table>
-            <div class="paging-wrap">
-                <div class="paging" id="pages">
-                    <a href="#" class="prev disabled">
-                        <i class="fa fa-caret-left" aria-hidden="true"></i>
-                        <i class="fa fa-caret-left" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="prev disabled">
-                        <i class="fa fa-caret-left" aria-hidden="true"></i>
-                        <span><</span>
-                    </a>
-                    <a href="search?page=1" class="number on">
-                        <span>1</span>
-                    </a>
-                    <a href="search?page=2" class="number">
-                        <span>2</span>
-                    </a>
-                    <a href="search?page=3" class="number">
-                        <span>3</span>
-                    </a>
-                    <a href="search?page=4" class="number">
-                        <span>4</span>
-                    </a>
-                    <a href="search?page=5" class="number">
-                        <span>5</span>
-                    </a>
-                    <a class="next" href="search.html?page=6">
-                        <span>></span>
-                        <i class="fa fa-caret-right" aria-hidden="true"></i>
-                    </a>
-                    <a class="next" href="InfoSharingListAll.html?page=62">
-                        <i class="fa fa-caret-right" aria-hidden="true"></i>
-                        <i class="fa fa-caret-right" aria-hidden="true"></i>
-                    </a>
+        <form
+            name="top_search"
+            class="search-wrap"
+            method="get"
+            action="/Search/SearchResult.html"
+            onsubmit="return false"
+        >
+            <div class="search-bar">
+                <div class="select-item">
+                    <select name="st">
+                        <option value="">통합검색</option>
+                        <option value="contest_all">전체공모전</option>
+                        <option value="1">디자인</option>
+                        <option value="2">광고/마케팅</option>
+                        <option value="3">게임</option>
+                        <option value="4">기획/아이디어</option>
+                        <option value="5">문학/수기</option>
+                        <option value="6">네이밍/슬로건</option>
+                        <option value="7">취업/창업</option>
+                        <option value="8">소프트웨어</option>
+                        <option value="9">기타</option>
+                    </select>
                 </div>
+                <input
+                    type="text"
+                    name="sw"
+                    value=""
+                    alt="검색어 입력"
+                    onkeypress="if(event.keyCode == 13) Search();"
+                    placeholder="검색어 입력"
+                />
             </div>
-        </article>
-    </section>
+            <!--엔터키 사용시 서치-->
 
-    <%- include('partials/footer') %> 
-</body>
+            <button
+                type="button"
+                onclick="Search"
+                class="btn-search"
+                alt="검색"
+                title="검색"
+            >
+                <div class="shading"></div>
+                검색
+            </button>
+        </form>
 
+        <section class="section-wrap">
+            <p>전체 공모전</p>
+            <article class="Post-wrap">
+                <table border="0" class="Post-space" name="Post">
+                    <% for(const post of posts) { %>
+                    <tr class="Post-cell">
+                        <td class="Post-item">
+                            <div class="Post-img">
+                                <img src="/images/category.png" />
+                            </div>
+                            <div class="Post-Tt">
+                                <a href="#" class="Title"><%= post.title %></a>
+                                <p class="Publisher">
+                                    의뢰업체 :
+                                    <a href="#"><%= post.Publisher %></a>
+                                </p>
+                            </div>
+                            <p class="date">2020-08-28 까지</p>
+                            <button
+                                type="button"
+                                class="btn-post"
+                                onclick="location.href='#'"
+                            >
+                                <div class="shading"></div>
+                                <%= post.category %>
+                            </button>
+                        </td>
+                    </tr>
+                    <% } %>
+                </table>
+                <div class="paging-wrap">
+                    <div class="paging" id="pages">
+                        <a href="#" class="prev disabled">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                        </a>
+                        <% if(page !== 1) { %>
+                        <a class="prev" href="search?page=<%=page-1%>">
+                            <i class="fa fa-caret-left" aria-hidden="true"></i>
+                            <span> <</span>
+                        </a>
+                        <% } for(var i=(Math.ceil(postCnt/5) > 5 ? page - 2 :
+                        0); i < (page + 3); i++) { if (i < 0 || i + 1 >
+                        Math.ceil(postCnt/5)) continue;%>
+                        <a href="search?page=<%=i+1%>" class="number on">
+                            <% if (page === i + 1) { %>
+                            <span><b><%=i+1%></b></span>
+                            <% } else { %>
+                            <span><%=i+1%></span>
+                            <% } %>
+                        </a>
+                        <% } if(page + 3 < Math.ceil(postCnt/5)) { %>
+                        <a class="next" href="search?page=<%=page+1%>">
+                            <span>></span>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </a>
+                        <% } %>
+                        <a class="next" href="InfoSharingListAll.html?page=62">
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <%- include('partials/footer') %>
+    </body>
 </html>
