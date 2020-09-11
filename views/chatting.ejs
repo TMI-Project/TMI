@@ -6,18 +6,21 @@
     <title>TMI-base</title>
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/chatting.css">
+    <script src="../js/chatting.js"></script>
 </head>
 <body>
     <%- include('partials/header') %> 
-    <div id="main">
+    <main>
+        <h1>채팅방 이름</h1>
       <div id="chat">
         <!-- 채팅 메시지 영역 -->
       </div>
-      <div>
-        <input type="text" id="test" placeholder="메시지를 입력해주세요..">
-        <button onclick="send()">전송</button>
+      <div class="chatting">
+        <span class="plus">+</span>
+        <input type="text" id="input">
+        <button class="send" onclick="send()">전송</button>
       </div>
-    </div>
+    </main>
     <%- include('partials/footer') %> 
 </body>
 </html>
