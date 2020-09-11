@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TMI-base</title>
     <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/chatting.css">
 </head>
 <body>
     <%- include('partials/header') %> 
+    <div id="main">
+      <div id="chat">
+        <!-- 채팅 메시지 영역 -->
+      </div>
+      <div>
+        <input type="text" id="test" placeholder="메시지를 입력해주세요..">
+        <button onclick="send()">전송</button>
+      </div>
+    </div>
     <%- include('partials/footer') %> 
 </body>
 </html>
