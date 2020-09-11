@@ -10,9 +10,12 @@ a {
     color: black
 }
 
-li{list-style: none;}
+li {
+    list-style: none;
+}
 
-header * a, footer * a{
+header * a,
+footer * a {
     color: white
 }
 
@@ -45,6 +48,7 @@ header {
     right: 75.57%;
     top: 0%;
     bottom: 0%;
+    text-align: center;
 
     background: rgba(11, 32, 134, 0.87);
 }
@@ -148,18 +152,18 @@ header nav {
     text-align: center;
 }
 
-footer{
+footer {
     position: absolute;
     width: 1900px;
     height: 245px;
     left: 0px;
-    top: 2012px;   
-    text-align: left; 
-    
+    top: 2012px;
+    text-align: left;
+
     background: #253DAC;
 }
 
-.TMI-logo2{
+.TMI-logo2 {
     position: absolute;
     left: 3%;
     right: 78.91%;
@@ -167,7 +171,7 @@ footer{
     bottom: 64.47%;
 }
 
-.TMI-footer{
+.TMI-footer {
     position: absolute;
     left: 11.77%;
     right: 75.31%;
@@ -175,7 +179,7 @@ footer{
     bottom: 52.82%;
 }
 
-.TMI-p{
+.TMI-p {
     position: absolute;
     left: 0%;
     right: 17%;
@@ -185,7 +189,7 @@ footer{
     text-align: center;
 }
 
-footer nav{
+footer nav {
     position: absolute;
     left: 28%;
     right: 60%;
@@ -193,9 +197,12 @@ footer nav{
     bottom: 46.84%;
 }
 
-footer nav ul{margin: 10px; font-size: 18px;}
+footer nav ul {
+    margin: 10px;
+    font-size: 18px;
+}
 
-address{
+address {
     position: absolute;
     left: 52.08%;
     right: 41.56%;
@@ -205,16 +212,20 @@ address{
     width: 280px;
 }
 
-address p, address h3{
-    margin: 0; 
+address p,
+address h3 {
+    margin: 0;
     font-weight: normal;
     font-style: normal;
     font-size: 18px;
-    line-height: 21px;    
+    line-height: 21px;
 }
-address div{margin-bottom: 20px;}
 
-.about{
+address div {
+    margin-bottom: 20px;
+}
+
+.about {
     position: absolute;
     left: 75%;
     right: 10%;
@@ -222,7 +233,7 @@ address div{margin-bottom: 20px;}
     bottom: 60%;
 }
 
-footer div ul{
+footer div ul {
     margin: 0 0 5px 0;
     font-family: Inter;
     font-style: normal;
@@ -231,7 +242,7 @@ footer div ul{
     line-height: 24px;
 }
 
-.footer-hr{
+.footer-hr {
     position: absolute;
     left: 12.5%;
     right: 12.5%;
@@ -241,13 +252,13 @@ footer div ul{
     width: 1440px;
 }
 
-.copyright{
+.copyright {
     position: absolute;
     left: 12.5%;
     right: 76.04%;
     top: 75%;
     bottom: 15.79%;
-    
+
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
