@@ -42,10 +42,16 @@ socket.on('update', function(data) {
   chat.appendChild(message)
 })
 
+function enterkey() {
+  if(window.event.keyCode == 13 && document.getElementById('input').value != ''){
+    send()
+  }
+}
+
 /* 메시지 전송 함수 */
 function send() {
   // 입력되어있는 데이터 가져오기
-  var message = document.getElementById('input').value
+    var message = document.getElementById('input').value
   
   // 가져왔으니 데이터 빈칸으로 변경
   document.getElementById('input').value = ''

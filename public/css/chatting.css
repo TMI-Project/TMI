@@ -63,9 +63,28 @@ main {
 
 #input{
   background-color: #C4C4C4;
+  position: relative;
+  bottom: 3px;
   width: 696px;
   height: 38px;
   margin: 5px 0 5px 0;
+  border: solid 1px rgb(124, 124, 124);
+  border-radius: 3px;
 }
 
+.plus{
+  position: relative;
+  top: 7px;
+  right: 10px;
+  font-size: 35px;
+  border: solid 1px;
+  padding: 3px;
+}
 
+.send{
+  background-color: #fff;
+  border: solid 1px;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 3px;
+}
