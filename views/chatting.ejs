@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMI-base</title>
+    <title>TMI-chat</title>
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/chatting.css">
     <script src="../js/chatting.js"></script>
 </head>
 <body>
     <%- include('partials/header') %> 
-    <main>
-        <h1>채팅방 이름</h1>
+    <article>
+        <main>
+        <h2>채팅방 이름</h2>
       <div id="chat">
         <!-- 채팅 메시지 영역 -->
       </div>
@@ -21,6 +22,22 @@
         <button class="send" onclick="send()">전송</button>
       </div>
     </main>
+    <div>
+        <h2>채팅방 목록</h2>
+        <div>
+        <input type="text" id="search">
+        <img src="../images/search.png" alt="검색"  width="44.41" height="26.04">
+        </div>
+        <!-- 채팅방 목록 -->
+        <div>
+            <!-- <li>
+            <%# for() { %>
+                <ul></ul>
+            <%# } %> 
+            </li> -->
+        </div>
+    </div>
+    </article>
     <%- include('partials/footer') %> 
 </body>
 </html>

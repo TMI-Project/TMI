@@ -1,17 +1,24 @@
 /* 메인 */
-main {
+article {
   margin: auto;
+  margin-bottom: 0;
   margin-top: 199px;
-  width: 889.11px;
+  width: 1279.11px;
   height: 914px;
   border: solid 3px rgba(15, 36, 139, 1);
+}
+
+main{
+  float: left;
+  width: 889.11px;
+  border-right: solid 2px;
+  height: 914px;
 }
 
 /* 채팅 영역 */
 #chat {
   height: 85%;
   width: 100%;
-  background-color: antiquewhite;
   overflow-y: auto;
 }
 
@@ -36,13 +43,14 @@ main {
 /* 내가 보낸 메시지 */
 .me {
   position: relative;
-  right: 20px;
-  left: 250px;
+  left: 550px;
   width: 30%;
   min-height: 25px;
-  background-color: lemonchiffon;
-  border-radius: 5px;
-  margin-top: 10px;
+  background-color: rgba(229, 229, 229, 0.37);
+  border: solid 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 3px;
 }
 
 /* 상대방이 보낸 메시지 */
@@ -51,14 +59,17 @@ main {
   left: 250px;
   width: 20%;
   min-height: 25px;
-  background-color: white;
-  border-radius: 5px;
-  margin-top: 10px;
+  background-color: rgba(229, 229, 229, 0.37);
+  border: solid 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .chatting{
   text-align: center;
   border-top: solid 2px;
+  padding: 10px;
+  padding-bottom: 0;
 }
 
 #input{
@@ -87,4 +98,25 @@ main {
   border-radius: 3px;
   font-size: 18px;
   padding: 3px;
+  margin-left: 8px;
+}
+
+h2{
+  text-align: center; 
+  font-size: 27px; 
+  margin: 0px;
+  padding: 15px;
+  border-bottom: solid 2px;
+}
+
+aside{
+  width: 389.92px;
+  float: right;
+}
+
+.time{
+  position: relative;
+  top: 17px;
+  left: 550px;
+  font-size: 10px;
 }
