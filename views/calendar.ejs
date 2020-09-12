@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TMI</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/calendar.css">
 </head>
 <body>
     <%- include('partials/header') %> 
+
+    <table class="Calendar top">
+        <tr>
+            <td><label onclick="prevCalendar()"><</label></td>
+            <td class="top calendar">M월</td>
+            <td><label onclick="nextCalendar()">></label></td>
+        </tr>
+    </table>
+
+    <table class="Calendar center">
+        <tr>
+            <td id="Sunday">일</td>
+            <td id="Monday">월</td>
+            <td id="Tuesday">화</td>
+            <td id="Wednesday">수</td>
+            <td id="Thursday">목</td>
+            <td id="Friday">금</td>
+            <td id="Saturday">토</td>
+        </tr>
+    </table>
+
     <%- include('partials/footer') %> 
 </body>
 </html>
