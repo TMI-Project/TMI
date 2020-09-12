@@ -48,6 +48,9 @@ function enterkey() {
   }
 }
 
+//스크롤 맨 아래로 고정
+document.getElementById('chat').scrollTop = document.getElementById('chat').clientHeight;
+
 /* 메시지 전송 함수 */
 function send() {
   // 입력되어있는 데이터 가져오기
@@ -80,11 +83,11 @@ function send() {
   // 프로필 사진 표시
   const image = new Image();
   image.classList.add('prf')
-  image.src = '/images/icon/proflie.png'
-  image.alt = "응 안돼쥬?"
+  image.src = '/images/icon/profile.png'
+  image.alt = "프로필"
   chat.appendChild(image)
 
   // 서버로 message, time 이벤트 전달 + 데이터와 함께
-  socket.emit('time', {type: 'time', time: time})
-  socket.emit('message', {type: 'message', message: message})
+//   socket.emit('time', {type: 'time', time: time})
+//   socket.emit('message', {type: 'message', message: message})
 }
