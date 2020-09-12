@@ -77,7 +77,14 @@ function send() {
   msg.appendChild(node)
   chat.appendChild(msg)
 
-  // 서버로 message 이벤트 전달 + 데이터와 함께
+  // 프로필 사진 표시
+  const image = new Image();
+  image.classList.add('prf')
+  image.src = '/images/icon/proflie.png'
+  image.alt = "응 안돼쥬?"
+  chat.appendChild(image)
+
+  // 서버로 message, time 이벤트 전달 + 데이터와 함께
   socket.emit('time', {type: 'time', time: time})
   socket.emit('message', {type: 'message', message: message})
 }
