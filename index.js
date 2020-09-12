@@ -5,6 +5,8 @@ const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const routes = require('./router/index');
+const socket = require('socket.io')
+const http = require('http')
 
 //express 객체 생성 및 소켓을 app 이하로 넣어준다.
 const app = express();
@@ -54,9 +56,15 @@ mongoose
 
 
         //포트 열고 링크 남기기
-        app.listen(port, () => {
+        // app.listen(port, () => {
+        //     console.log('it is listening to port 4000');
+        //     console.log(`open http://localhost:${port}`);
+        // });
+        const server = http.createServer(app)
+        const io = socket(server)
+        server.listen(port, () => {
             console.log('it is listening to port 4000');
             console.log(`open http://localhost:${port}`);
-        });
+        })
     })
     .catch(console.error);
