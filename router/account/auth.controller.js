@@ -40,8 +40,10 @@ exports.localRegister = async (req, res) => {
     const token = await account.generateToken();
     res.cookie('access_token', token, {
         httpOnly: true,
-        maxAge: 1000 * 60 * 60 * 24 * 7,
+        maxAge: 1000 * 60 * 60 * 24 * 7
     });
+    
+    res.cookie('login', 'succes', {maxAge: 1000 * 60 * 60 * 24 * 7});
 
     res.redirect('/');
 };
