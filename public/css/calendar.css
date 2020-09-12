@@ -1,0 +1,15 @@
+html, body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.content-main{
+    width: 100%;
+    display: block;
+    background: #ababab;
+}
+#calendar{
+    align-content: center;
+}
+#Sunday{
+    color: #ef3333;
+}
