@@ -3,10 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TMI</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/calendar.css">
 </head>
+<script>
+    var today = new Date(); //오늘 날짜
+    var date = new Date(); //오늘 날짜를 세주는 역할
+    function prevCalendar() { //이전 달
+        today = new Date(today.getFullYear(), today.getMonth()-1, today.getDate());
+        buildCalendar(); //달력 cell을 만들고 출력
+    }
+    function nextCalendar() { //다음 달
+        today = new Date(today.getFullYear(), today.getMonth()+1, today.getDate());
+        buildCalendar(); //달력 cell을 만들고 출력
+    }
+    function buildCalendar() {
+        var doMonth = new Date(today.getFullYear(), today.getMonth(), 1); //이번 달의 1day
+        var lastDate = new Date(today.getFullYear(), today.getMonth()+1, 0); //이번 달 마지막 day
+        var tbCalendar = document.getElementById("calendar"); //날짜를 찍을 테이블 변수, day까지 찍힌다.
+        var tbCalendarYM = document.getElementById("tbCalendarYM"); //테이블에 정확한 날짜를 찍는 변수
+        tbCalendarYM.innerHTML = (today.getMonth()+1)+"월";
+        while (tbCalendar.rows.length>2) { //이번 달이 끝나면 다음 달로 넘겨줌
+            tbCalendar.deleteRow(tbCalendar.rows.length-1); //30일 이후로 담을 달에 순서대로 열이 계속 이어짐.
+        }
+        var row = null;
+        row = tbCalendar.insertRow(); //테이블 초기화
+        var cnt = 0; //셀의 갯수를 세는 변수
+        for(i=0; i<doMonth.getDay(); i++) { //이번 달의 day만큼 반복
+            cell = row.insertCell(); //열 한칸씩 계속 만드는 역할
+            cnt = cnt + 1; //열의 갯수를 계속 다음으로 위치하게 해주는 역할
+        }
+        for(i=1; i<lastDate.getDate(); i++) { //1일~마지막 일까지 반복
+            cell = row.insertCell(); //열 한칸씩 계속 만듦
+            cell.innerHTML = i; //섹을 1부터 마지막 day까지 html문법에 넣기
+            cnt = cnt + 1; //열의 갯수를 계속 다음으로 위치하게 해주는 역할
+            if (cnt % 7 == 1) { //일요일 계산
+                cell.innerHTML = "<font color = #B72B2B>" + i //1번째 셀만 색칠
+            }
+            if(today.getFullYear() == date.getFullYear() && today.getMonth() == date.getMonth() && i == date.getDate()) {
+                //오늘의 날짜에 색칠
+                cell.bgColor = "#ffd255";
+            }
+        }
+    }
+</script>
 <body>
     <%- include('partials/header') %> 
+
+    <table class="Calendar top">
+        <tr>
+            <td><label onclick="prevCalendar()"><</label></td>
+            <td class="top calendar">M월</td>
+            <td><label onclick="nextCalendar()">></label></td>
+        </tr>
+    </table>
+
+    <table class="Calendar center">
+        <tr>
+            <td id="Sunday">일</td>
+            <td id="Monday">월</td>
+            <td id="Tuesday">화</td>
+            <td id="Wednesday">수</td>
+            <td id="Thursday">목</td>
+            <td id="Friday">금</td>
+            <td id="Saturday">토</td>
+        </tr>
+    </table>
+    <script>
+        buildCalendar();
+    </script>
     <%- include('partials/footer') %> 
 </body>
 </html>
