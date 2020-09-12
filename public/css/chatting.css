@@ -20,6 +20,7 @@ main{
   height: 85%;
   width: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* 접속 알림 */
@@ -48,8 +49,8 @@ main{
   min-height: 25px;
   background-color: rgba(229, 229, 229, 0.37);
   border: solid 1px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   padding: 3px;
 }
 
@@ -116,7 +117,7 @@ aside{
 
 .time{
   position: relative;
-  top: 17px;
+  top: 14px;
   left: 550px;
-  font-size: 10px;
+  font-size: 12px;
 }
