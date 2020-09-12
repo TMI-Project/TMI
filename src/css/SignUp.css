@@ -1,0 +1,101 @@
+.contain{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+	padding: 283px;
+	height: 500px;
+}
+#id{
+	margin-top: 45px;
+	margin-bottom: 12px;
+}
+#signupID{
+	width: 680px;
+	height: 70px;
+	border: solid 1px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	font-size: 25px;
+}
+#signupPASSWORD{
+	width: 680px;
+	height: 70px;
+	border: solid 1px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	font-size: 25px;
+}
+#againPASSWORD{
+	width: 680px;
+	height: 70px;
+	border: solid 1px;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	font-size: 25px;
+}
+#signupNAME{
+	width: 680px;
+	height: 70px;
+	border: solid 1px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	font-size: 25px;
+}
+#birthYEAR{
+	width: 220px;
+	height: 70px;
+	border: solid 1px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding: 0 10px;
+	font-size: 20px;
+}
+#birthMONTH{
+	width: 220px;
+	height: 70px;
+	border: solid 1px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+}
+#birthDAY{
+	width: 185px;
+	height: 70px;
+	border: solid 1px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	font-size: 20px;
+}
+#signupEMAIL{
+	width: 680px;
+	height: 70px;
+	border: solid 1px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	font-size: 25px;
+}
+#signupAGENCY{
+	width: 680px;
+	height: 70px;
+	border: solid 1px;
+	margin-bottom: 50px;
+	padding: 0 10px;
+	font-size: 25px;
+}
+#SIGNUPbutton{
+	width: 700px;
+	height: 75px;
+	background-color: white;
+	color: #0b2086;
+	border: solid #0b2086 1px;
+	font-size: 24px;
+}
+#Essential{
+	display: block;
+}
+#Choice{
+	display: block;
+}
