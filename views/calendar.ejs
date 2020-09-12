@@ -18,7 +18,7 @@
         today = new Date(today.getFullYear(), today.getMonth()+1, today.getDate());
         buildCalendar(); //달력 cell을 만들고 출력
     }
-    function buildCalendar() {
+    function buildCalendar() { //현재 달
         var doMonth = new Date(today.getFullYear(), today.getMonth(), 1); //이번 달의 1day
         var lastDate = new Date(today.getFullYear(), today.getMonth()+1, 0); //이번 달 마지막 day
         var tbCalendar = document.getElementById("calendar"); //날짜를 찍을 테이블 변수, day까지 찍힌다.
