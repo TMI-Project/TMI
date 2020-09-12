@@ -157,7 +157,8 @@ footer {
     width: 1900px;
     height: 245px;
     left: 0px;
-    top: 2012px;
+    top: 280%;
+    bottom: 5%;
     text-align: left;
 
     background: #253DAC;
@@ -183,8 +184,8 @@ footer {
     position: absolute;
     left: 0%;
     right: 17%;
-    top: 90%;
-    bottom: 0%;
+    top: 96%;
+    bottom: 1%;
     font-size: 16px;
     text-align: center;
 }
@@ -206,7 +207,7 @@ address {
     position: absolute;
     left: 52.08%;
     right: 41.56%;
-    top: 10%;
+    top: 15%;
     bottom: 66.58%;
 
     width: 280px;
@@ -256,7 +257,7 @@ footer div ul {
     position: absolute;
     left: 12.5%;
     right: 76.04%;
-    top: 75%;
+    top: 85%;
     bottom: 15.79%;
 
     font-family: 'Inter', sans-serif;
