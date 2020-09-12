@@ -1,5 +1,0 @@
-PORT = 5252
-MONGO_URI=mongodb+srv://TMI:TMIproject@cluster0.9mchl.mongodb.net/TMI?retryWrites=true&w=majority
-NODE_PATH=src
-SECRET_KEY=linglingse1lingling
-JWT_SECRET_KEY=seolinglingliling
