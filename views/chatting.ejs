@@ -22,11 +22,12 @@
         <button class="send" onclick="send()">전송</button>
       </div>
     </main>
-    <div>
+    <aside>
         <h2>채팅방 목록</h2>
-        <div>
-        <input type="text" id="search">
-        <img src="../images/search.png" alt="검색"  width="44.41" height="26.04">
+        <div class="searDiv">
+            <input type="text" id="search">
+            <img src="../images/search.png" class="seaBtn" alt="검색"  width="44.41" height="26.04">
+            <hr>
         </div>
         <!-- 채팅방 목록 -->
         <div>
@@ -36,7 +37,7 @@
             <%# } %> 
             </li> -->
         </div>
-    </div>
+    </aside>
     </article>
     <%- include('partials/footer') %> 
 </body>

@@ -70,7 +70,7 @@ main{
 }
 
 #input{
-  background-color: #C4C4C4;
+  background-color: rgba(196, 196, 196, 0.22);
   position: relative;
   bottom: 3px;
   width: 696px;
@@ -106,11 +106,6 @@ h2{
   border-bottom: solid 2px;
 }
 
-aside{
-  width: 389.92px;
-  float: right;
-}
-
 .time{
   position: relative;
   top: 14px;
@@ -122,4 +117,31 @@ aside{
   position: relative;
   top: -45px;
   left: 832px;
+}
+
+.searDiv{
+  padding: 2px;
+  width: 100%;
+}
+
+hr{border: solid 1px black; width: 30.3%;}
+
+#search{
+  width: 262.83px;
+  height: 21.22px;
+  background-color: rgba(196, 196, 196, 0.22);
+  border: solid 1px;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+
+.seaBtn{
+  width: 39.82px;
+  height: 23px;
+  background-color: rgba(196, 196, 196, 0.22);
+  border: solid 1px;
+  border-radius: 5px;
+  position: relative;
+  top: 7px;
+  left: 5px;
 }

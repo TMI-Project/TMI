@@ -40,8 +40,51 @@ exports.localRegister = async (req, res) => {
     const token = await account.generateToken();
     res.cookie('access_token', token, {
         httpOnly: true,
-        maxAge: 1000 * 60 * 60 * 24 * 7,
+        maxAge: 1000 * 60 * 60 * 24 * 7
     });
+    
+    res.cookie('login', 'succes', {maxAge: 1000 * 60 * 60 * 24 * 7});
 
+    res.redirect('/');
+};
+exports.localLogin = async (req, res) => {
+    // 데이터 검증
+    const schema = Joi.object()
+    .keys({
+        ID: Joi.string().required(),
+        password: Joi.string().required()
+    });
+    const result = schema.validate(req.body);
+
+    if(result.error) {
+        res.status = 400; //Bad Request
+        return;
+    }
+
+    const { ID, password } = req.body;
+    
+    const account = await Account.findByEmailOrID(req.body);
+    console.log(typeof(account));
+
+    if(!account || !account.validatePassword(password)){
+        //유저가 존재하지 않거나 || 비밀번호가 일치하지 않으면
+        return res.status(403).json({
+            error: '아이디가 틀렸거나, 비밀번호가 일치하지 않습니다.',
+        });
+    }
+
+    let token = null;
+    try {
+        token = await account.generateToken();
+    } catch (e) {
+        res.status(403).json({
+            error: e
+        });
+    }
+    res.cookie('access_token', token, {
+        httpOnly: true,
+        maxAge: 1000 * 60 * 60 * 24 * 7 });
+
+    res.cookie('login', 'succes', {maxAge: 1000 * 60 * 60 * 24 * 7});
     res.redirect('/');
 };

@@ -79,6 +79,12 @@ Account.statics.localRegister = function ({//회원가입, req.body로 인자를
     return account.save();
 };
 
+Account.methods.validatePassword = function(password) {
+    // 함수로 전달받은 password 의 해시값과, 데이터에 담겨있는 해시값과 비교를 합니다.
+    const hashed = hash(password);
+    return this.password === hashed;
+};
+
 Account.methods.generateToken = function () {// 토큰 생성
     const {
         _id,

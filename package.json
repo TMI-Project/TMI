@@ -2,7 +2,7 @@
   "name": "tmi",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/iseolin76/ICT-project.git",
+  "repository": "git+https://github.com/iseolin76/ICT-project.git",
   "author": "ICT",
   "license": "MIT",
   "scripts": {
@@ -24,5 +24,13 @@
   "devDependencies": {
     "eslint": "^7.8.1",
     "nodemon": "^2.0.4"
+  },
+  "description": "```txt\r     [FIX] 버그 수정 시",
+  "bugs": {
+    "url": "https://github.com/iseolin76/ICT-project/issues"
+  },
+  "homepage": "https://github.com/iseolin76/ICT-project#readme",
+  "directories": {
+    "lib": "lib"
   }
 }

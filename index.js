@@ -6,7 +6,10 @@ const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const routes = require('./router/index');
 
+//express 객체 생성 및 소켓을 app 이하로 넣어준다.
 const app = express();
+// app.io = require('socket.io');
+
 const port = process.env.PORT || 4000;
 const { jwtMiddleware } = require('./lib/token');
 
@@ -40,6 +43,15 @@ mongoose
 
         //라우팅
         app.use('/', routes);
+        
+        // app.io.on('connection', (socket) => {
+        //     console.log('connect user');
+
+        //     socket.on('disconnect', () => {
+        //         console.log('discoonect');
+        //     });
+        // });
+
 
         //포트 열고 링크 남기기
         app.listen(port, () => {
