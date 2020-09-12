@@ -6,7 +6,10 @@
     <title>TMI-chat</title>
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/chatting.css">
-    <script src="../js/chatting.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>const socket = io('http://localhost/chatting:4000'></script>
+    <script type="nomodule" src="../js/chatting.js"></script>
+    <script src="../js/chatting-send.js"></script>
 </head>
 <body>
     <%- include('partials/header') %> 
@@ -18,7 +21,7 @@
       </div>
       <div class="chatting">
         <img src="../images/icon/plus.PNG" alt="plus" class="plus">
-        <input type="text" id="input" onkeydown="enterkey()";>
+        <input type="text" id="input" onkeydown="enterkey()">
         <button class="send" onclick="send()">전송</button>
       </div>
     </main>

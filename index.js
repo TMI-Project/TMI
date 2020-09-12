@@ -8,9 +8,10 @@ const routes = require('./router/index');
 const socket = require('socket.io')
 const http = require('http')
 
-//express 객체 생성 및 소켓을 app 이하로 넣어준다.
 const app = express();
-// app.io = require('socket.io');
+const server = http.createServer(app)
+
+server.on("connection", () => { console.log("서버 연결"); });
 
 const port = process.env.PORT || 4000;
 const { jwtMiddleware } = require('./lib/token');
@@ -52,19 +53,18 @@ mongoose
         //     socket.on('disconnect', () => {
         //         console.log('discoonect');
         //     });
-        // });
-
+        // }); 
 
         //포트 열고 링크 남기기
         // app.listen(port, () => {
         //     console.log('it is listening to port 4000');
         //     console.log(`open http://localhost:${port}`);
         // });
-        const server = http.createServer(app)
-        const io = socket(server)
         server.listen(port, () => {
             console.log('it is listening to port 4000');
             console.log(`open http://localhost:${port}`);
         })
     })
     .catch(console.error);
+
+module.exports = server;
