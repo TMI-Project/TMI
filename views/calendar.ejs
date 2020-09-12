@@ -11,26 +11,35 @@
 <body>
     <%- include('partials/header') %> 
 
-    <table class="Calendar top">
-        <tr>
-            <td><label onclick="prevCalendar()"> < </label></td>
-            <td class="top calendar">M월</td>
-            <td><label onclick="nextCalendar()"> > </label></td>
-        </tr>
-    </table>
-
-    <table class="Calendar center">
-        <tr>
-            <td id="Sunday">일</td>
-            <td id="Monday">월</td>
-            <td id="Tuesday">화</td>
-            <td id="Wednesday">수</td>
-            <td id="Thursday">목</td>
-            <td id="Friday">금</td>
-            <td id="Saturday">토</td>
-        </tr>
-    </table>
-
+    <div class="content-main">
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <td>
+                        <label id="prev">
+                            &#60;
+                        </label>
+                    </td>
+                    <td id="current-month"></td>
+                    <td>
+                        <label id="next">
+                            &#62;
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="Sunday">일</td>
+                    <td id="Monday">월</td>
+                    <td id="Tuesday">화</td>
+                    <td id="Wednesday">수</td>
+                    <td id="Thursday">목</td>
+                    <td id="Friday">금</td>
+                    <td id="Saturday">토</td>
+                </tr>
+            </thead>
+            <tbody class="calendar-body"></tbody>
+        </table>
+    </div>
     <%- include('partials/footer') %> 
 </body>
 </html>
