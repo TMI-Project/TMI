@@ -6,11 +6,9 @@
     <title>TMI</title>
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/calendar.css">
-    <script src="../js/calendar.js"></script>
 </head>
 <body>
     <%- include('partials/header') %> 
-
     <div class="content-main">
         <table id="calendar">
             <thead>
@@ -37,7 +35,8 @@
                     <td id="Saturday">토</td>
                 </tr>
             </thead>
-            <tbody class="calendar-body"></tbody>
+            <tbody id="cBody"></tbody>
+            <script src="../js/calendar.js"></script>
         </table>
     </div>
     <%- include('partials/footer') %> 

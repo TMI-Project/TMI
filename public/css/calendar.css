@@ -3,8 +3,13 @@ html, body{
     font-family: 'Roboto', sans-serif;
 }
 .content-main{
-    width: 100%;
+    position: absolute;
+    top: 350px;
+    left: 280px;
+    width: 1350px;
+    height: 1200px;
     display: block;
+    border: solid 3px rgba(15, 36, 139, 1);
     background: #ababab;
 }
 #calendar{
