@@ -9,4 +9,7 @@ const Post = new Schema({
     Publisher : String,
     atDate : Date,
     img : String
-})
+});
+
+exports.module = mongoose.model('Post', Post);
+
