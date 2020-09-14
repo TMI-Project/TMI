@@ -52,7 +52,7 @@ Account.statics.findByEmailOrID = function ({//이메일 또는 아이디로 계
 };
 
 Account.statics.findBy_id = function(id){
-    return this.findOne({}, {_id : id} );
+    return this.findOne({ _id : id });
 };
 
 
