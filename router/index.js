@@ -1,6 +1,6 @@
 const express = require('express');
 const cookies = require('../lib/cookie');
-const account = require('../models/account');
+const Account = require('../models/account');
 
 const router = express.Router();
 
@@ -12,13 +12,9 @@ router.use('/calendar', require('./calendar'));
 router.get('/',async (req, res) => {
 
     _id =  await cookies.findAccount_idAtCookie(req);
-    console.log("_id");
-    console.log(_id);
+    account = await Account.findBy_id(_id);
+    userName = account.Name;
 
-    userName = await account.findBy_id(_id);
-    console.log("userName");
-    console.log(userName);
-    
     res.render('index' /* , {name : 'userName'} */ );
 });
 
