@@ -88,18 +88,10 @@ Account.methods.validatePassword = function(password) {
 Account.methods.generateToken = function () {// 토큰 생성
     const {
         _id,
-        Name,
-        Byear,
-        gender,
-        Agency
     } = this;
 
     return generateToken({
-        _id,
-        Name,
-        Byear,
-        gender,
-        Agency
+        _id
     }, 'account');
 };
 
