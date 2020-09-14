@@ -5,8 +5,8 @@ const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const routes = require('./router/index');
-const socket = require('socket.io')
 const http = require('http')
+
 
 const app = express();
 const server = http.createServer(app)
