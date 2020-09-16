@@ -49,7 +49,7 @@ mongoose
 
         //포트 열고 링크 남기기
         app.listen(port, () => {
-            console.log('it is listening to port 4000');
+            console.log('it is listening to port 5252');
             console.log(`open http://localhost:${port}`);
         });
     })
