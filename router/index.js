@@ -10,10 +10,13 @@ router.use('/chatting', require('./chatting'));
 router.use('/calendar', require('./calendar'));
 
 router.get('/',async (req, res) => {
-
-    _id =  await cookies.findAccount_idAtCookie(req);
-    account = await Account.findBy_id(_id);
-    userName = account.Name;
+    try{
+        _id =  await cookies.findAccount_idAtCookie(req);
+        account = await Account.findBy_id(_id);
+        userName = account.Name;
+    }catch( e ) {
+        console.log(e);
+    }
 
     res.render('index' /* , {name : 'userName'} */ );
 });
