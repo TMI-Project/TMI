@@ -20,5 +20,6 @@ router.get('/',async (req, res) => {
 
     res.render('index' /* , {name : 'userName'} */ );
 });
+//TODO 로그인 쿠키가 없다면 로그인창으로 redircet
 
 module.exports = router;
