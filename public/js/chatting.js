@@ -1,7 +1,7 @@
 var socket = io()
 
 /* 접속 되었을 때 실행 */
-socket.on('connection', function () {
+socket.on('connect', function () {
   /* 이름을 입력받고 */
   var name = prompt('반갑습니다!', '');
 
