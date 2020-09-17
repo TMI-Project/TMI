@@ -45,5 +45,8 @@ POST /account/login
 ```
 - Response
 ```
-어... 어떻게 반응해줘야되지
+SUCCESS {"Succes":쿠키 발급}
+````
+```
+FAIL {"code": 403, message: "아이디, 또는 비밀번호가 틀렸습니다."}
 ```
