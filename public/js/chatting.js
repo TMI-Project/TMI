@@ -1,7 +1,7 @@
 var socket = io()
 
 /* 접속 되었을 때 실행 */
-socket.on('connect', function() {
+socket.on('connect', function () {
   /* 이름을 입력받고 */
   var name = prompt('반갑습니다!', '');
 
@@ -14,15 +14,15 @@ socket.on('connect', function() {
 });
 
 /* 서버로부터 데이터 받은 경우 */
-socket.on('update', function(data) {
-  var chat = document.getElementById('chat');
+socket.on('update', function (data) {
+  var chat = document.getElementById('chat')
 
   var message = document.createElement('div');
   var node = document.createTextNode(`${data.name}: ${data.message}`);
   var className = '';
 
   // 타입에 따라 적용할 클래스를 다르게 지정
-  switch(data.type) {
+  switch (data.type) {
     case 'message':
       className = 'other';
       break;
@@ -47,10 +47,6 @@ function enterkey() {
   }
 }
 
-//스크롤 맨 아래로 고정
-document.getElementById('chat').scrollTop = document.getElementById('chat').clientHeight;
-
-/* 메시지 전송 함수 */
 function send() {
   // 입력되어있는 데이터 가져오기
     var message = document.getElementById('input').value;
@@ -86,7 +82,7 @@ function send() {
   image.alt = "프로필";
   chat.appendChild(image);
 
-  // 서버로 message, time 이벤트 전달 + 데이터와 함께
-//   socket.emit('time', {type: 'time', time: time})
-//   socket.emit('message', {type: 'message', message: message})
+  //서버로 message, time 이벤트 전달 + 데이터와 함께
+  socket.emit('time', { type: 'time', time: time })
+  socket.emit('message', { type: 'message', message: message })
 }

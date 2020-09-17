@@ -5,10 +5,17 @@ const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const routes = require('./router/index');
+const http = require('http');
+const socket = require('socket.io')
 
-//express 객체 생성 및 소켓을 app 이하로 넣어준다.
 const app = express();
+<<<<<<< HEAD
+const server = http.createServer(app)
 
+const io = socket(server)
+=======
+
+>>>>>>> 977ff4a9627f4a60c4b45ba4f184946e3d115d8c
 
 const port = process.env.PORT || 4000;
 const { jwtMiddleware } = require('./lib/token');
@@ -43,6 +50,12 @@ mongoose
 
         //라우팅
         app.use('/', routes);
+<<<<<<< HEAD
+
+        //포트 열고 링크 남기기
+        server.listen(port, () => {
+            console.log('it is listening to port 4000');
+=======
         
         
 
@@ -50,7 +63,44 @@ mongoose
         //포트 열고 링크 남기기
         app.listen(port, () => {
             console.log('it is listening to port 5252');
+>>>>>>> 977ff4a9627f4a60c4b45ba4f184946e3d115d8c
             console.log(`open http://localhost:${port}`);
-        });
+        })
     })
     .catch(console.error);
+
+    io.sockets.on('connection', function(socket) {
+        console.log("서버 연결");
+      
+        /* 새로운 유저가 접속했을 경우 다른 소켓에게도 알려줌 */
+        socket.on('newUser', function(name) {
+          console.log(name + ' 님이 접속하였습니다.')
+      
+          /* 소켓에 이름 저장해두기 */
+          socket.name = name
+      
+          /* 모든 소켓에게 전송 */
+          io.sockets.emit('update', {type: 'connect', name: 'SERVER', message: name + '님이 접속하였습니다.'})
+        })
+      
+        /* 전송한 메시지 받기 */
+        socket.on('message', function(data) {
+          /* 받은 데이터에 누가 보냈는지 이름을 추가 */
+          data.name = socket.name
+          
+          console.log(data)
+      
+          /* 보낸 사람을 제외한 나머지 유저에게 메시지 전송 */
+          socket.broadcast.emit('update', data);
+        })
+      
+        /* 접속 종료 */
+        socket.on('disconnect', function() {
+          console.log(socket.name + '님이 나가셨습니다.')
+      
+          /* 나가는 사람을 제외한 나머지 유저에게 메시지 전송 */
+          socket.broadcast.emit('update', {type: 'disconnect', name: 'SERVER', message: socket.name + '님이 나가셨습니다.'});
+        })
+      })
+
+module.exports = server;
