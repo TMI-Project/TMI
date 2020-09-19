@@ -9,13 +9,9 @@ const http = require('http');
 const socket = require('socket.io')
 
 const app = express();
-<<<<<<< HEAD
 const server = http.createServer(app)
 
 const io = socket(server)
-=======
-
->>>>>>> 977ff4a9627f4a60c4b45ba4f184946e3d115d8c
 
 const port = process.env.PORT || 4000;
 const { jwtMiddleware } = require('./lib/token');
@@ -50,20 +46,10 @@ mongoose
 
         //라우팅
         app.use('/', routes);
-<<<<<<< HEAD
-
-        //포트 열고 링크 남기기
-        server.listen(port, () => {
-            console.log('it is listening to port 4000');
-=======
         
-        
-
-
         //포트 열고 링크 남기기
         app.listen(port, () => {
             console.log('it is listening to port 5252');
->>>>>>> 977ff4a9627f4a60c4b45ba4f184946e3d115d8c
             console.log(`open http://localhost:${port}`);
         })
     })
