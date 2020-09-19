@@ -1,6 +1,6 @@
 const express = require('express');
-const cookies = require('../../lib/cookie');
-const Account = require('../../models/account');
+const cookies = require('../lib/cookie');
+const Account = require('../models/account');
 
 const router = express.Router();
 
