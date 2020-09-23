@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
 
+html{height: 100%;}
+
 body {
+    height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -157,8 +160,8 @@ footer {
     width: 1900px;
     height: 245px;
     left: 0px;
-    top: 280%;
-    bottom: 5%;
+    top: 200%;
+    bottom: 0;
     text-align: left;
 
     background: #253DAC;
