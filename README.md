@@ -30,6 +30,7 @@ yarn-error.log
 .env
 node_module
 ```
+
 <<<<<<< HEAD
 
 ```txt
@@ -187,14 +188,10 @@ EJS/CSS/JS
 ### 백엔드
 
 #### 프레임워크
-<<<<<<< HEAD
 
 ```txt
-Koa.js
+express.js
 ```
-=======
-    express.js
->>>>>>> 9035d9a53b03e5b573f04e2dbe00e7e3a144cff1
 
 #### DBMS
 
