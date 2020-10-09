@@ -2,7 +2,7 @@
   "name": "tmi",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/iseolin76/ICT-project.git",
+  "repository": "git+https://github.com/iseolin76/ICT-project.git",
   "author": "ICT",
   "license": "MIT",
   "scripts": {
@@ -17,11 +17,21 @@
     "express": "^4.17.1",
     "joi": "^17.2.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.3",
-    "morgan": "^1.10.0"
+    "mongoose": "^5.10.6",
+    "morgan": "^1.10.0",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
   },
   "devDependencies": {
     "eslint": "^7.8.1",
     "nodemon": "^2.0.4"
+  },
+  "description": "```txt\r     [FIX] 버그 수정 시",
+  "bugs": {
+    "url": "https://github.com/iseolin76/ICT-project/issues"
+  },
+  "homepage": "https://github.com/iseolin76/ICT-project#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
