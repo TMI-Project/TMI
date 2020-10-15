@@ -22,58 +22,38 @@
 
 ## 실행 방법
 
-```txt
+````txt
 package.json
 package.lock.json
 yarn.lock
 yarn-error.log
 .env
 node_module
-```
-
-<<<<<<< HEAD
 
 ```txt
-1. 해당 파일들을 루트디렉토리에 올린다.
-2. npm install yarn
-3. yarn add nodemon
-4. yarn start, yarn start:dev
-=======
-    1. gh repo clone iseolin76/TMI
-    2. 눈치껏 .env파일을 생성하거나, 관계자들에게 구한다.
-    3. npm install yarn
-    4. npm install morgan
-    4. yarn add nodemon
-    5. yarn start, yarn start:dev
->>>>>>> 9035d9a53b03e5b573f04e2dbe00e7e3a144cff1
-```
+1. gh repo clone iseolin76/TMI
+2. 눈치껏 .env파일을 생성하거나, 관계자들에게 구한다.
+3. npm install yarn
+4. npm install morgan
+4. yarn add nodemon
+5. yarn start, yarn start:dev
+````
 
 ## INDEX
 
 ### 피드, 캘린더, 커뮤니티
 
 ```txt
-<<<<<<< HEAD
 각 피드, 캘린더, 커뮤니티 페이지로 이동한다.
 각 peed/auth 등의 사이트에 들어가 로그인을 검증 후 각 페이지로 이동한다.
 로그인시에만 사용 가능하다.
-=======
-    각 피드, 캘린더, 커뮤니티 페이지로 이동한다.
-    각 peed/auth 등의 사이트에 들어가 로그인을 검증 후 각 페이지로 이동한다.
-    로그인시에만 사용 가능하다.
->>>>>>> 9035d9a53b03e5b573f04e2dbe00e7e3a144cff1
 ```
 
 #### Alarm
 
 ```txt
-<<<<<<< HEAD
 캘린더, 피드, 커뮤니티에서 활동을 핢으로써 생기는
 각 활동들에 대한 알람을 여기에 표기한다. 로그인시에만 사용 가능하다.
-=======
-    캘린더, 피드, 커뮤니티에서 활동을 핢으로써 생기는
-    각 활동들에 대한 알람을 여기에 표기한다, 로그인시에만 사용 가능하다.
->>>>>>> 9035d9a53b03e5b573f04e2dbe00e7e3a144cff1
 ```
 
 ### Chatting
@@ -164,17 +144,6 @@ node_module
 내 정보에서 다룰 정보들
     1. 닉네임
     2. 성별
-<<<<<<< HEAD
-    3. 나이
-    4. 경력
-    5. 전문분야(리스트 중 최대 3개 선택, 추후 자신의 프로필에 자기소개 작성 가능)
-    6. 지역
-    7. 직업
-    8. 관심분야
-=======
-
-
->>>>>>> 9035d9a53b03e5b573f04e2dbe00e7e3a144cff1
 ```
 
 ## 사용 프로그램
