@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="/images/TMI-logo.png" rel="shortcut icon" type="image/x-icon">
+    <title>TMI</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/calendar.css">
+    <script src="../js/calendar.js"></script>
 </head>
+
 <body>
-    <%- include('partials/header') %> 
-    <%- include('partials/footer') %> 
+    <%- include('partials/header') %>
+
+    <div class="content-main">
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <td>
+                        <label id="prev">
+                            &#60;
+                        </label>
+                    </td>
+                    <td id="current-month"></td>
+                    <td>
+                        <label id="next">
+                            &#62;
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="Sunday">일</td>
+                    <td id="Monday">월</td>
+                    <td id="Tuesday">화</td>
+                    <td id="Wednesday">수</td>
+                    <td id="Thursday">목</td>
+                    <td id="Friday">금</td>
+                    <td id="Saturday">토</td>
+                </tr>
+            </thead>
+            <tbody class="calendar-body"></tbody>
+        </table>
+    </div>
+    <%- include('partials/footer') %>
 </body>
+
 </html>
