@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
+    <link href="/images/TMI-logo.png" rel="shortcut icon" type="image/x-icon">
     <title>TMI</title>
 </head>
 
@@ -28,10 +29,10 @@
             var i;
             var x = document.getElementsByClassName("mySlides");
             for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
+                x[i].style.display = "none";
             }
-            if (slideIndex > x.length-1) {slideIndex = 1}; 
-            x[slideIndex-1].style.display = "block";
+            if (slideIndex > x.length - 1) { slideIndex = 1 };
+            x[slideIndex - 1].style.display = "block";
             setTimeout(showDivs, 5000, slideIndex++)
         }
     </script>
