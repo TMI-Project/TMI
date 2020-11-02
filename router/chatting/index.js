@@ -4,12 +4,12 @@ const Account = require('../../models/account');
 
 const chatting = express.Router();
 
-chatting.get('/', async(req, res) => {
-    try{
-        _id =  await cookies.findAccount_idAtCookie(req);
+chatting.get('/', async (req, res) => {
+    try {
+        _id = await cookies.findAccount_idAtCookie(req);
         account = await Account.findBy_id(_id);
         userName = account.Name;
-    }catch( e ) {
+    } catch (e) {
         console.log(e);
     }
 

@@ -6,7 +6,7 @@ socket.on('connect', function () {
   var name = prompt('반갑습니다!', '');
 
   /* 이름이 빈칸인 경우 */
-  if(!name) { name = '익명'; }
+  if (!name) { name = '익명'; }
 
   /* 서버에 새로운 유저가 왔다고 알림 */
   socket.emit('newUser', name);
@@ -42,15 +42,15 @@ socket.on('update', function (data) {
 })
 
 function enterkey() {
-  if(window.event.keyCode == 13 && document.getElementById('input').value != ''){
+  if (window.event.keyCode == 13 && document.getElementById('input').value != '') {
     send();
   }
 }
 
 function send() {
   // 입력되어있는 데이터 가져오기
-    var message = document.getElementById('input').value;
-  
+  var message = document.getElementById('input').value;
+
   // 가져왔으니 데이터 빈칸으로 변경
   document.getElementById('input').value = '';
 
@@ -61,7 +61,7 @@ function send() {
   let today = new Date();
   var time = document.createElement('p');
   var exsecn = today.toLocaleTimeString().split(':');
-  var tnode = document.createTextNode(exsecn[0]+"시 "+exsecn[1]+"분");
+  var tnode = document.createTextNode(exsecn[0] + "시 " + exsecn[1] + "분");
 
   time.classList.add('time');
   time.appendChild(tnode);
