@@ -73,6 +73,7 @@ io.sockets.on('connection', function (socket) {
   socket.on('message', function (data) {
     /* 받은 데이터에 누가 보냈는지 이름을 추가 */
     data.name = socket.name
+    data.time = socket.time
 
     console.log(data)
 
