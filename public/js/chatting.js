@@ -15,6 +15,7 @@ socket.on('connect', function () {
 
 /* 서버로부터 데이터 받은 경우 */
 socket.on('update', function (data) {
+  console.log(data)
   var chat = document.getElementById('chat')
 
   var message = document.createElement('div');
