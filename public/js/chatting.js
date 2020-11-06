@@ -19,7 +19,12 @@ socket.on('update', function (data) {
   var chat = document.getElementById('chat')
 
   var message = document.createElement('div');
+  var time = document.createElement('p');
   var node = document.createTextNode(`${data.name}: ${data.message}`);
+  var data_time = `${data.time}`;
+  var exsecn = data_time.split(",");
+  console.log(exsecn);
+  var tnode = document.createTextNode(exsecn[0] + "시 " + exsecn[1] + "분");
   var className = '';
 
   // 타입에 따라 적용할 클래스를 다르게 지정
@@ -38,6 +43,8 @@ socket.on('update', function (data) {
   }
 
   message.classList.add(className);
+  time.appendChild(tnode);
+  chat.appendChild(time);
   message.appendChild(node);
   chat.appendChild(message);
 })
@@ -84,6 +91,5 @@ function send() {
   chat.appendChild(image);
 
   //서버로 message, time 이벤트 전달 + 데이터와 함께
-  socket.emit('time', { type: 'time', time: time })
-  socket.emit('message', { type: 'message', message: message })
+  socket.emit('message', { type: 'message', message: message, time: exsecn })
 }
