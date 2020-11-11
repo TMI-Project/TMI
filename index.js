@@ -78,10 +78,10 @@ io.sockets.on('connection', function (socket) {
   })
 
   socket.on('time', (data) => {
+    console.log("socket.on time data")
     var message = socket.data;
     var time = data;
 
-    console.log(message, time);
 
     /* 보낸 사람을 제외한 나머지 유저에게 메시지 전송 */
     socket.broadcast.emit('update', { message: message, time: time });
