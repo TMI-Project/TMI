@@ -72,14 +72,22 @@ io.sockets.on('connection', function (socket) {
   /* 전송한 메시지 받기 */
   socket.on('message', function (data) {
     /* 받은 데이터에 누가 보냈는지 이름을 추가 */
-    data.name = socket.name
-    data.time = socket.time
+    data.name = socket.name;
 
-    console.log(data)
+    socket.data = data;
+  })
+
+  socket.on('time', (data) => {
+    var message = socket.data;
+    var time = data;
+
+    console.log(message, time);
 
     /* 보낸 사람을 제외한 나머지 유저에게 메시지 전송 */
-    socket.broadcast.emit('update', data);
-  })
+    socket.broadcast.emit('update', { message: message, time: time });
+  }
+  )
+
 
   /* 접속 종료 */
   socket.on('disconnect', function () {

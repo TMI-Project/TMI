@@ -15,15 +15,25 @@ socket.on('connect', function () {
 
 /* 서버로부터 데이터 받은 경우 */
 socket.on('update', function (data) {
-  console.log(data)
-  var chat = document.getElementById('chat')
-
-  var message = document.createElement('div');
-  var node = document.createTextNode(`${data.name}: ${data.message}`);
+  var message = data.message
+  var message_time = data.time;
+  console.log(message, time);
+  var chat = document.getElementById('chat');
+  var messages = document.createElement('div');
+  var time = document.createElement('p');
+  var node = document.createTextNode(message.name + ":" + message.message);
+  var data_time = message_time;
+  console.log(data_time);
+  var exsecn = data_time.value.split(',');
+  // var tnode = document.createTextNode(exsecn[0] + "시 " + exsecn[1] + "분");
   var className = '';
 
   // 타입에 따라 적용할 클래스를 다르게 지정
-  switch (data.type) {
+  switch (message.type) {
+    case 'time':
+      className = 'other-time';
+      break;
+
     case 'message':
       className = 'other';
       break;
@@ -37,9 +47,11 @@ socket.on('update', function (data) {
       break;
   }
 
-  message.classList.add(className);
-  message.appendChild(node);
-  chat.appendChild(message);
+  // messages.classList.add(className);
+  // time.appendChild(tnode);
+  // chat.appendChild(time);
+  // messages.appendChild(node);
+  // chat.appendChild(messages);
 })
 
 function enterkey() {
@@ -84,6 +96,6 @@ function send() {
   chat.appendChild(image);
 
   //서버로 message, time 이벤트 전달 + 데이터와 함께
-  socket.emit('time', { type: 'time', time: time })
-  socket.emit('message', { type: 'message', message: message })
+  socket.emit('message', { type: 'message', message: message });
+  socket.emit('time', { type: 'time', time: exsecn });
 }
