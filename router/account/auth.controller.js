@@ -61,7 +61,7 @@ exports.localLogin = async (req, res) => {
         return;
     }
 
-    const { ID, password } = req.body;
+    const { password } = req.body;
     
     const account = await Account.findByEmailOrID(req.body);
     console.log(typeof(account));
@@ -86,5 +86,12 @@ exports.localLogin = async (req, res) => {
         maxAge: 1000 * 60 * 60 * 24 * 7 });
 
     res.cookie('login', 'succes', {maxAge: 1000 * 60 * 60 * 24 * 7});
+    res.redirect('/');
+};
+
+exports.logout = async( _, res) => {
+    res.clearCookie('login');
+    res.clearCookie('access_token');
+
     res.redirect('/');
 };

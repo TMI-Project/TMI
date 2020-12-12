@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/base.css">
+    <link href="/images/TMI-logo.png" rel="shortcut icon" type="image/x-icon">
     <title>TMI</title>
 </head>
+
 <body>
-    <%- include('partials/header') %> 
+    <%- include('partials/header') %>
 
     <div class="contant">
         <img src="/images/TMI-logo.png" alt="TMI-logo.black" width="222" height="120">
-        <form method="POST" action="login/auth">   
+        <form method="POST" action="login/auth">
             <div class="IDbox">
                 <input type="ID" id="loginID" name="ID" placeholder="아이디">
             </div>
@@ -25,7 +28,8 @@
             <input type="submit" id="membershipbutton" title="회원가입" value="회원가입">
         </form>
     </div>
-    
-    <%- include('partials/footer') %> 
+
+    <%- include('partials/footer') %>
 </body>
+
 </html>

@@ -48,8 +48,13 @@ Account.statics.findByEmailOrID = function ({//이메일 또는 아이디로 계
         }, {
             email
         }]
-    })
-}
+    });
+};
+
+Account.statics.findBy_id = function(id){
+    return this.findOne({ _id : id });
+};
+
 
 Account.statics.localRegister = function ({//회원가입, req.body로 인자를 넘겨주면 됨
     ID,
@@ -88,18 +93,10 @@ Account.methods.validatePassword = function(password) {
 Account.methods.generateToken = function () {// 토큰 생성
     const {
         _id,
-        Name,
-        Byear,
-        gender,
-        Agency
     } = this;
 
     return generateToken({
-        _id,
-        Name,
-        Byear,
-        gender,
-        Agency
+        _id
     }, 'account');
 };
 

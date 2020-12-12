@@ -1,4 +1,5 @@
-/* 메인 */
+/** @format */
+
 article {
   margin: auto;
   margin-bottom: 0;
@@ -8,7 +9,7 @@ article {
   border: solid 3px rgba(15, 36, 139, 1);
 }
 
-main{
+main {
   float: left;
   width: 889.11px;
   border-right: solid 2px;
@@ -46,7 +47,6 @@ main{
   position: relative;
   left: 550px;
   width: 30%;
-  min-height: 25px;
   background-color: rgba(229, 229, 229, 0.37);
   border: solid 1px;
   padding: 3px;
@@ -55,21 +55,21 @@ main{
 /* 상대방이 보낸 메시지 */
 .other {
   right: 20px;
-  left: 250px;
-  width: 20%;
-  min-height: 25px;
+  left: 300px;
+  width: 30%;
   background-color: rgba(229, 229, 229, 0.37);
   border: solid 1px;
+  padding: 3px;
 }
 
-.chatting{
+.chatting {
   text-align: center;
   border-top: solid 2px;
   padding: 10px;
   padding-bottom: 0;
 }
 
-#input{
+#input {
   background-color: rgba(196, 196, 196, 0.22);
   position: relative;
   bottom: 3px;
@@ -80,7 +80,7 @@ main{
   border-radius: 3px;
 }
 
-.plus{
+.plus {
   position: relative;
   top: 7px;
   right: 10px;
@@ -89,7 +89,7 @@ main{
   padding: 3px;
 }
 
-.send{
+.send {
   background-color: #fff;
   border: solid 1px;
   border-radius: 3px;
@@ -98,35 +98,39 @@ main{
   margin-left: 8px;
 }
 
-h2{
-  text-align: center; 
-  font-size: 27px; 
+h2 {
+  text-align: center;
+  font-size: 27px;
   margin: 0px;
   padding: 15px;
   border-bottom: solid 2px;
 }
 
-.time{
+.time {
   position: relative;
   top: 14px;
   left: 550px;
   font-size: 12px;
+  margin: 0 0 12px 0;
 }
 
-.prf{
+.prf {
   position: relative;
   top: -45px;
   left: 832px;
 }
 
-.searDiv{
+.searDiv {
   padding: 2px;
   width: 100%;
 }
 
-hr{border: solid 1px black; width: 30.3%;}
+.black-hr {
+  border: solid 1px black;
+  width: 30.3%;
+}
 
-#search{
+#search {
   width: 262.83px;
   height: 21.22px;
   background-color: rgba(196, 196, 196, 0.22);
@@ -135,7 +139,7 @@ hr{border: solid 1px black; width: 30.3%;}
   margin-left: 25px;
 }
 
-.seaBtn{
+.seaBtn {
   width: 39.82px;
   height: 23px;
   background-color: rgba(196, 196, 196, 0.22);

@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMI-chat</title>
+    <link href="/images/TMI-logo.png" rel="shortcut icon" type="image/x-icon">
+    <title>TMI</title>
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/chatting.css">
+    <script src="/socket.io/socket.io.js"></script>
     <script src="../js/chatting.js"></script>
 </head>
+
 <body>
-    <%- include('partials/header') %> 
+    <%- include('partials/header') %>
     <article>
         <main>
-        <h2>채팅방 이름</h2>
-      <div id="chat">
-        <!-- 채팅 메시지 영역 -->
-      </div>
-      <div class="chatting">
-        <img src="../images/icon/plus.PNG" alt="plus" class="plus">
-        <input type="text" id="input" onkeydown="enterkey()";>
-        <button class="send" onclick="send()">전송</button>
-      </div>
-    </main>
-    <aside>
-        <h2>채팅방 목록</h2>
-        <div class="searDiv">
-            <input type="text" id="search">
-            <img src="../images/search.png" class="seaBtn" alt="검색"  width="44.41" height="26.04">
-            <hr>
-        </div>
-        <!-- 채팅방 목록 -->
-        <div>
-            <!-- <li>
+            <h2>채팅방 이름</h2>
+            <div id="chat">
+                <!-- 채팅 메시지 영역 -->
+            </div>
+            <div class="chatting">
+                <img src="../images/icon/plus.PNG" alt="plus" class="plus">
+                <input type="text" id="input" onkeydown="enterkey()">
+                <button class="send" onclick="send()">전송</button>
+            </div>
+        </main>
+        <aside>
+            <h2>채팅방 목록</h2>
+            <div class="searDiv">
+                <input type="text" id="search">
+                <img src="../images/search.png" class="seaBtn" alt="검색" width="44.41" height="26.04">
+                <hr class="black-hr">
+            </div>
+            <!-- 채팅방 목록 -->
+            <div>
+                <!-- <li>
             <%# for() { %>
                 <ul></ul>
             <%# } %> 
             </li> -->
-        </div>
-    </aside>
+            </div>
+        </aside>
     </article>
-    <%- include('partials/footer') %> 
+    <%- include('partials/footer') %>
 </body>
+
 </html>
