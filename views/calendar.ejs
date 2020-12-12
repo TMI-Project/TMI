@@ -10,22 +10,29 @@
 <body>
     <%- include('partials/header') %> 
     <div class="content-main">
+        <div>
+            <div class="direction year">
+                <label id="prev">
+                    &#60;
+                </label>
+                <span id=current-year></span>
+                <label id="next">
+                    &#62;
+                </label>
+            </div>
+            <div class="direction month">
+                <label id="prev">
+                    &#60;
+                </label>
+                <span id=current-month></span>
+                <label id="next">
+                    &#62;
+                </label>
+            </div>
+        </div>
         <table id="calendar">
             <thead>
-                <tr>
-                    <td>
-                        <label id="prev">
-                            &#60;
-                        </label>
-                    </td>
-                    <td id="current-month"></td>
-                    <td>
-                        <label id="next">
-                            &#62;
-                        </label>
-                    </td>
-                </tr>
-                <tr>
+                <tr class="date">
                     <td id="Sunday">일</td>
                     <td id="Monday">월</td>
                     <td id="Tuesday">화</td>
@@ -36,9 +43,9 @@
                 </tr>
             </thead>
             <tbody id="cBody"></tbody>
-            <script src="../js/calendar.js"></script>
         </table>
     </div>
+    <script src="/js/calendar.js"></script>
     <%- include('partials/footer') %> 
 </body>
 </html>

@@ -1,20 +1,47 @@
 html, body{
     background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
 .content-main{
-    position: absolute;
-    top: 350px;
-    left: 280px;
-    width: 1350px;
-    height: 1200px;
-    display: block;
-    border: solid 3px rgba(15, 36, 139, 1);
-    background: #ababab;
-}
-#calendar{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
     align-content: center;
+    position: absolute;
+    margin-top: 275px;
+    margin-left: 330px;
+}
+.date{
+    width: 1260px;
+    height: 75px;
 }
 #Sunday{
-    color: #ef3333;
+    padding-left: 74px;
+}
+#Monday{
+    padding-left: 74px;
+}
+#Tuesday{
+    padding-left: 74px;
+}
+#Wednesday{
+    padding-left: 74px;
+}
+#Thursday{
+    padding-left: 74px;
+}
+#Friday{
+    padding-left: 74px;
+}
+#Saturday{
+    padding-left: 74px;
+}
+#calendar{
+    width: 1260px;
+    height: 1000px;
+    display: block;
+    border: solid 5px #0F248B;
+    background-color: white;
 }
